@@ -1,0 +1,31 @@
+<resources>
+    <!--Main Activity-->
+    <string name="app_name">Sprint2</string>
+    <string name="activity_main_student">Student</string>
+    <string name="activity_main_advisor">Advisor</string>
+
+    <!--Advisor Login Activity-->
+    <string name="activity_advisor_login">Login</string>
+    <string name="activity_advisor_email">Please enter your email</string>
+    <string name="activity_advisor_password">Please enter your password</string>
+
+    <!--Advisor Event Activity-->
+    <string name="advisor_event_add_event">Add an Event</string>
+    <string name="advisor_event_edit_event">Edit an Event</string>
+    <string name="advisor_event_view_history">View History</string>
+
+    <!--Advisor Add Activity-->
+    <string name="advisor_add_fields">Fill in the Fields</string>
+    <string name="advisor_add_event_name">Name of the event</string>
+    <string name="activity_advisor_event_time">Time of the Event</string>
+    <string name="advisor_add_event_date">Event Date</string>
+    <string name="advisor_activity_event_location">Event Location</string>
+    <string name="advisor_add_organized_by">Organized By:</string>
+    <string name="advisor_add_event_description">Event Description</string>
+    <string name="advisor_add_submit">Submit</string>
+
+    <!--Student Activity-->
+    <string name="student_activity_email">Enter your email</string>
+    <string name="student_activity_password">Enter your password</string>
+    <string name="student_activity_login">Login</string>
+</resources>

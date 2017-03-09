@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.myles.sprint2.StudentAcitivity">
+
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/StudentEmail"
+        android:hint="@string/student_activity_email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        style="@style/EditTextStyle"
+        android:id="@+id/StudentPassword"
+        android:hint="@string/student_activity_password"
+        android:inputType="textPassword" />
+
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/StudentLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/student_activity_login"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="258dp"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>
