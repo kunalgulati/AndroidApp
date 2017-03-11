@@ -4,6 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.myles.sprint2.StudentFaculty">
+    android:background="@android:color/background_light"
+    tools:context="com.example.myles.sprint2.StudentFaculty"
+    android:weightSum="1">
+
+    <TableLayout
+        android:id="@+id/StudentFaculty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+    </TableLayout>
+
+
 
 </LinearLayout>

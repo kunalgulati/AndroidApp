@@ -19,7 +19,9 @@
         <activity android:name=".AdvisorLogin" />
         <activity android:name=".AdvisorEvent" />
         <activity android:name=".AdvisorAdd" />
-        <activity android:name=".StudentDepartment"></activity>
+        <activity android:name=".StudentLogin" />
+        <activity android:name=".StudentDepartment" />
+        <activity android:name=".StudentFaculty"></activity>
     </application>
 
 </manifest>
