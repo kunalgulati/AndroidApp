@@ -1,6 +1,5 @@
 package com.example.myles.sprint2;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,26 +10,26 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.Toast;
 
-public class StudentFaculty extends AppCompatActivity {
+public class StudentDepartment extends AppCompatActivity {
 
     private static  final int Total_Rows = 3;           // Total number of faculties in SFU
     // To be fetched from the Database
 
     Button BtnArray[] = new Button[Total_Rows];          // An Array of buttons
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_faculty);
+        setContentView(R.layout.activity_student_department);
 
-
-        populateFaculty();
+        populateDepartment();
     }
 
 
-    private void populateFaculty() {
+    private void populateDepartment() {
 
-        TableLayout table = (TableLayout) findViewById(R.id.StudentFaculty);
+        TableLayout table = (TableLayout) findViewById(R.id.StudentDepartment);
 
         for(int row = 0; row  < Total_Rows; row++)
         {
@@ -80,7 +79,7 @@ public class StudentFaculty extends AppCompatActivity {
         {
             Button button = BtnArray[row];
 
-            button.setText("Name of Faculties");       // Displays the text at the Center
+            button.setText("Name of Department");       // Displays the text at the Center
             // Name of faculties are supposed to fetched from the database
 
             button.setGravity(Gravity.CENTER);      // Used for aligning the text
@@ -94,13 +93,7 @@ public class StudentFaculty extends AppCompatActivity {
 
     private void gridButtonClick()                 // used for on click
     {
-        Toast.makeText(this, "Faculty Activity", Toast.LENGTH_LONG).show();
-
-        Intent intent = new Intent(getApplicationContext(), StudentDepartment.class);
-        startActivity(intent);
+        Toast.makeText(this, "Department Activity", Toast.LENGTH_LONG).show();
     }
-
-
-
 
 }
