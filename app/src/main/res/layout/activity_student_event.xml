@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_light"
-    tools:context="com.example.myles.sprint2.StudentFaculty"
-    android:weightSum="1">
+    tools:context="com.example.myles.sprint2.StudentEvent">
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -15,7 +14,7 @@
         android:layout_weight="1">
 
         <TableLayout
-            android:id="@+id/StudentFaculty"
+            android:id="@+id/StudentEventList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:ignore="UselessParent">

@@ -21,7 +21,8 @@
         <activity android:name=".AdvisorAdd" />
         <activity android:name=".StudentLogin" />
         <activity android:name=".StudentDepartment" />
-        <activity android:name=".StudentFaculty"></activity>
+        <activity android:name=".StudentFaculty" />
+        <activity android:name=".StudentEvent"></activity>
     </application>
 
 </manifest>

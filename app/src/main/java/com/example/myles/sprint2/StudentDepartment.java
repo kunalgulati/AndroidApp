@@ -1,5 +1,6 @@
 package com.example.myles.sprint2;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,10 +13,14 @@ import android.widget.Toast;
 
 public class StudentDepartment extends AppCompatActivity {
 
-    private static  final int Total_Rows = 3;           // Total number of faculties in SFU
+    private static  final int Total_Rows = DepartmentList.DepartmentInfo.ArtsAndSocialScience.length;           // Total number of faculties in SFU
     // To be fetched from the Database
 
     Button BtnArray[] = new Button[Total_Rows];          // An Array of buttons
+
+    //////////////////////////////////////////
+
+
 
 
     @Override
@@ -48,11 +53,11 @@ public class StudentDepartment extends AppCompatActivity {
 
             // Padding
             int padding = 25;                       // Declaring the Number of pixels (in DP), to add the padding between the buttons
-            tableRow.setPadding(10,padding,10,10);  // function used to add the padding
+            tableRow.setPadding(25,padding,25,25);  // function used to add the padding
 
 
 
-
+            // Seting the On CLICK Listener
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -79,10 +84,10 @@ public class StudentDepartment extends AppCompatActivity {
         {
             Button button = BtnArray[row];
 
-            button.setText("Name of Department");       // Displays the text at the Center
+            button.setText(DepartmentList.DepartmentInfo.ArtsAndSocialScience[row]);       // Displays the text at the Center
             // Name of faculties are supposed to fetched from the database
 
-            button.setGravity(Gravity.CENTER);      // Used for aligning the text
+            button.setGravity(Gravity.CENTER);                     // Used for aligning the text
             button.setBackgroundColor(Color.rgb(105, 240, 174));  // Changing the color of button
 
         }
@@ -90,10 +95,13 @@ public class StudentDepartment extends AppCompatActivity {
     }
 
 
-
-    private void gridButtonClick()                 // used for on click
+    // used for on click
+    private void gridButtonClick()
     {
-        Toast.makeText(this, "Department Activity", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Department Activity" , Toast.LENGTH_LONG).show();
+
+        Intent intent = new Intent(getApplicationContext(), StudentEvent.class);
+        startActivity(intent);
     }
 
 }

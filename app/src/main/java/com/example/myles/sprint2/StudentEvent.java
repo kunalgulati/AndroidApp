@@ -1,6 +1,5 @@
 package com.example.myles.sprint2;
 
-import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,30 +10,28 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.Toast;
 
-public class StudentFaculty extends AppCompatActivity {
+public class StudentEvent extends AppCompatActivity
+{
 
-    private static  final int Total_Faculties = DepartmentList.DepartmentInfo.Faculty.length;           // Total number of faculties in SFU
+    private static  final int Total_Rows = 3;           // Total number of faculties in SFU
     // To be fetched from the Database
 
-    Button BtnArray[] = new Button[Total_Faculties];          // An Array of buttons
-
-    // Name of All the Faculties are fetched from the Class DepartmentList
+    Button BtnArray[] = new Button[Total_Rows];          // An Array of buttons
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_faculty);
+        setContentView(R.layout.activity_student_event);
 
-
-        populateFaculty();
+        populatEvent();
     }
 
 
-    private void populateFaculty() {
+    private void populatEvent() {
 
-        TableLayout table = (TableLayout) findViewById(R.id.StudentFaculty);
+        TableLayout table = (TableLayout) findViewById(R.id.StudentEventList);
 
-        for(int row = 0; row  < Total_Faculties; row++)
+        for(int row = 0; row  < Total_Rows; row++)
         {
             TableRow tableRow = new TableRow(this);
             tableRow.setLayoutParams(new TableLayout.LayoutParams(
@@ -54,13 +51,13 @@ public class StudentFaculty extends AppCompatActivity {
             tableRow.setPadding(25,padding,25,25);  // function used to add the padding
 
 
-            final int finalRow = row;               // Temporary variable for row
 
+            // Setting the on CLICK Action
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    gridButtonClick(finalRow);
+                    gridButtonClick();
                 }
             });
 
@@ -78,11 +75,12 @@ public class StudentFaculty extends AppCompatActivity {
 
     private void ProcessButtons()               // Adding data and making changed to the buttons
     {
-        for (int row = 0; row < Total_Faculties; row++)
+        for (int row = 0; row < Total_Rows; row++)
         {
             Button button = BtnArray[row];
 
-            button.setText(DepartmentList.DepartmentInfo.Faculty[row]);       // Displays the text at the Center "FacultyName[row]"
+            button.setText("Name of Event");       // Displays the text at the Center
+            // Name of faculties are supposed to fetched from the database
 
             button.setGravity(Gravity.CENTER);      // Used for aligning the text
             button.setBackgroundColor(Color.rgb(105, 240, 174));  // Changing the color of button
@@ -92,23 +90,9 @@ public class StudentFaculty extends AppCompatActivity {
     }
 
 
-    // used for on click
-    protected void gridButtonClick(int position)
+    private void gridButtonClick()                 // used for on click
     {
-        int intValue = 9;
-
-        Toast.makeText(this, "Welcome to " + DepartmentList.DepartmentInfo.Faculty[position] , Toast.LENGTH_LONG).show();
-
-        // Sending the Position to the connecting Activity
-        //Bundle Value = new Bundle();                        // Bundle is a type of clas
-                                                            // Initilizing the Bndle
-        //Value.putInt("index", position);          // Puting the inteer value in the Bundle (Value)
-
-
-        int  R = 1;
-        Intent intent = new Intent(getApplicationContext(), StudentDepartment.class);
-        intent.putExtra("Integer_Index", R);
-        startActivity(intent);
+        Toast.makeText(this, "Department Activity", Toast.LENGTH_LONG).show();
     }
 
 

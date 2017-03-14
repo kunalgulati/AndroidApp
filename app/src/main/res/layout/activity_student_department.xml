@@ -7,13 +7,21 @@
     android:background="@android:color/background_light"
     tools:context="com.example.myles.sprint2.StudentDepartment">
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none"
+        android:layout_weight="1">
 
-    <TableLayout
-        android:id="@+id/StudentDepartment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:ignore="UselessParent">
-    </TableLayout>
+        <TableLayout
+            android:id="@+id/StudentDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="true"
+            tools:ignore="UselessParent">
+        </TableLayout>
+
+    </ScrollView>
 
 
 </LinearLayout>
