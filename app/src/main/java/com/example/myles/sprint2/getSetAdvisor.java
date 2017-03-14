@@ -6,15 +6,8 @@ package com.example.myles.sprint2;
 import android.app.Activity;
 
 public class getSetAdvisor extends Activity{
-    int id;
-    String firstName, sID, lastName, passWord, eventName, eventTime, eventDate, eventLocation, eventOrganizers, eventDescription;
+    String logIn,  passWord, eventName, eventTime, eventDate, eventLocation, eventOrganizers, eventDescription;
 
-    public void setid(int id){
-        this.id = id;
-    }
-    public int getid(){
-        return this.id;
-    }
 
     public void setsEventName(String eventName){
         this.eventName = eventName;
@@ -58,25 +51,12 @@ public class getSetAdvisor extends Activity{
         return this.eventDescription;
     }
 
-    public void setsId(String sID){
-        this.sID = sID;
-    }
-    public String getsId(){
-        return this.sID;
-    }
 
-    public void setfirstName(String firstName){
-        this.firstName = firstName;
+    public void setlogIn(String logIn){
+        this.logIn = logIn;
     }
-    public String getfirstName(){
-        return this.firstName;
-    }
-
-    public void setlastName(String lastName){
-        this.lastName = lastName;
-    }
-    public String getlastName(){
-        return this.lastName;
+    public String getlogIn(){
+        return this.logIn;
     }
 
     public void setpassWord(String passWord){
