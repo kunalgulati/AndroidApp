@@ -1,7 +1,7 @@
 package com.example.myles.sprint2;
 
 import android.content.Intent;
-import android.graphics.Color;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -90,8 +90,8 @@ public class StudentEvent extends AppCompatActivity
 
             button.setGravity(Gravity.LEFT);      // Used for aligning the text
 
-            button.setBackgroundColor(Color.rgb(105, 240, 174));  // Changing the color of button
-
+            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuGold));  // Changing the color of button
+            button.setTextColor(ContextCompat.getColor(this, R.color.sfuRed));  // Changing the color of the text
         }
 
     }

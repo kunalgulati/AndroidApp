@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
-    <color name="colorLight">#69F0AE</color>
     <color name="backgroundColor">#E0E0E0</color>
-
+    <color name="sfuRed">#A6192E</color>
+    <color name="sfuRedDark">#811324</color>
+    <color name="sfuBlue">#007096</color>
+    <color name="sfuGold">#C1A01E</color>
 
 </resources>
