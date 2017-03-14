@@ -22,7 +22,8 @@
         <activity android:name=".StudentLogin" />
         <activity android:name=".StudentDepartment" />
         <activity android:name=".StudentFaculty" />
-        <activity android:name=".StudentEvent"></activity>
+        <activity android:name=".StudentEvent" />
+        <activity android:name=".StudentEventDisplay"></activity>
     </application>
 
 </manifest>
