@@ -4,7 +4,11 @@
     <shared>
       <config>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <target>android-20</target>
+=======
+        <target>android-19</target>
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
 =======
         <target>android-19</target>
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
@@ -15,6 +19,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <list default="true" id="301947fa-55c6-4b28-86dc-1c58e55d7971" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_android_25.xml" afterPath="" />
@@ -57,6 +62,9 @@
 =======
     <list default="true" id="8a959f63-c572-4948-93a3-b2080ae2767b" name="Default" comment="" />
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
+=======
+    <list default="true" id="8a959f63-c572-4948-93a3-b2080ae2767b" name="Default" comment="" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
     <ignored path="Sprint2.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -82,12 +90,15 @@
   <component name="FileEditorManager">
     <leaf>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="StudentDepartment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/StudentDepartment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
 =======
+=======
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
       <file leaf-file-name="DepartmentList.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/DepartmentList.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -171,6 +182,9 @@
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
+=======
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
               <folding />
             </state>
@@ -178,6 +192,7 @@
         </entry>
       </file>
     </leaf>
+<<<<<<< HEAD
 <<<<<<< HEAD
   </component>
   <component name="FileTemplateManagerImpl">
@@ -201,6 +216,10 @@
         <entry key="$PROJECT_DIR$" value="3.3" />
       </map>
     </option>
+=======
+  </component>
+  <component name="GradleLocalSettings">
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
 =======
   </component>
   <component name="GradleLocalSettings">
@@ -1675,8 +1694,12 @@
     <option name="modificationStamps">
       <map>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <entry key="C:\Users\Colin\Desktop\Assignment 2\Sprint2" value="4468538782671" />
         <entry key="C:\Users\Kunal Gulati\Desktop\Sprint2" value="4467603241960" />
+=======
+        <entry key="C:\Users\press\OneDrive\Documents\GitHub\Sprint2" value="4468872199753" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
 =======
         <entry key="C:\Users\press\OneDrive\Documents\GitHub\Sprint2" value="4468872199753" />
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
@@ -2076,6 +2099,7 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
@@ -2090,11 +2114,16 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/DepartmentList.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/StudentDepartment.java" />
 =======
+=======
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorLogin.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorEvent.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/advisorDatabase.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_advisor_add.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorAdd.java" />
+<<<<<<< HEAD
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
+=======
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
       </list>
     </option>
@@ -2102,9 +2131,14 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="y" value="-8" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
+=======
+    <option name="width" value="1924" />
+    <option name="height" value="1038" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
 =======
     <option name="width" value="1924" />
     <option name="height" value="1038" />
@@ -2217,10 +2251,13 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="manifests" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidManifestsGroupNode" />
             </PATH_ELEMENT>
+=======
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
 =======
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
           </PATH>
@@ -2229,8 +2266,14 @@
       <pane id="Scratches" />
       <pane id="ProjectPane" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
+=======
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
 =======
       <pane id="Scratches" />
       <pane id="PackagesPane" />
@@ -2244,7 +2287,10 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <property name="device.picker.selection" value="2e79c4b2" />
+=======
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
 =======
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
   </component>
@@ -2445,6 +2491,7 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
@@ -2469,6 +2516,12 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="-8" y="0" width="1924" height="1038" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2501,6 +2554,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+<<<<<<< HEAD
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -2531,6 +2585,8 @@
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
+=======
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -2540,6 +2596,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_student_login.xml">
       <provider editor-type-id="text-editor">
@@ -2593,8 +2650,11 @@
           <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
 =======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/DepartmentList.java">
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/MainActivity.java">
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="176">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
           <folding />
@@ -2616,6 +2676,7 @@
           <folding />
         </state>
       </provider>
+<<<<<<< HEAD
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
@@ -2712,6 +2773,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="18" column="53" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="53" />
+=======
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorLogin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/getSetAdvisor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
           <folding />
 =======
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorEvent.java">
@@ -2726,15 +2802,23 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorAdd.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
         <state relative-caret-position="170">
           <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/DepartmentList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/advisorDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -2747,18 +2831,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_advisor_add.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/DepartmentDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="515">
           <caret line="92" column="20" selection-start-line="92" selection-start-column="20" selection-end-line="92" selection-end-column="20" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/advisorDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="39" column="13" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/StudentDatabaseOprations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -2775,6 +2876,23 @@
         <state relative-caret-position="242">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
+=======
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding>
+            <element signature="e#794#1036#0" expanded="true" />
+            <element signature="e#1035#1036#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorAdd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
           <folding>
             <element signature="e#903#1633#0" expanded="true" />
             <element signature="e#1632#1633#0" expanded="true" />
@@ -2782,6 +2900,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/myles/sprint2/AdvisorLogin.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -2834,6 +2953,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
 =======
 >>>>>>> 3e49ec4db64765145b93e4ae23d6c4d57e98aeb3
   </component>
