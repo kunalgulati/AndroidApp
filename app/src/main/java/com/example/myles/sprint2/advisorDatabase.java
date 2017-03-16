@@ -16,6 +16,7 @@ public class advisorDatabase extends SQLiteOpenHelper {
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "contacts.db";
     private static final String TABLE_NAME = "contacts";
+    private static final String COLUMN_Id = "id";
     private static final String COLUMN_logIn = "logIn";
     private static final String COLUMN_passWord = "passWord";
     private static final String COLUMN_eventName = "eventName";
@@ -28,11 +29,12 @@ public class advisorDatabase extends SQLiteOpenHelper {
 
     SQLiteDatabase db;
 
-    private static final String TABLE_CREATE = "create table contacts (logIn string primary key not null auto_increment , "+
-            "passWord text not null , eventName text not null , eventTime text not null , eventDate text not null , eventLocation text not null , eventOrganizers text not null , eventDescription text not null );";
+    private static final String TABLE_CREATE = "create table contacts (id integer primary key not null auto_increment , "+
+            "logIn text not null , passWord text not null , eventName text not null , eventTime text not null , eventDate text not null , eventLocation text not null , eventOrganizers text not null , eventDescription text not null );";
 
     public advisorDatabase(Context context){
         super(context , DATABASE_NAME , null , DATABASE_VERSION);
+        SQLiteDatabase db = this.getWritableDatabase();
     }
 
     @Override
@@ -44,10 +46,16 @@ public class advisorDatabase extends SQLiteOpenHelper {
     public void insertContact(getSetAdvisor c){
         db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
+
+        String query = "select * from contacts";
+        Cursor cursor = db.rawQuery(query, null);
+        int count = cursor.getCount();
+        values.put(COLUMN_Id, count);
         values.put(COLUMN_logIn, c.getlogIn());
         values.put(COLUMN_passWord , c.getpassWord());
         values.put(COLUMN_eventName , c.getEventName());
         values.put(COLUMN_eventDate , c.getEventDate());
+        values.put(COLUMN_eventTime , c.getEventTime());
         values.put(COLUMN_eventLocation , c.getEventLocation());
         values.put(COLUMN_eventOrganizers , c.getEventOrganizers());
         values.put(COLUMN_eventDescription , c.getEventDescription());

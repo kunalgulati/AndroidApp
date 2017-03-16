@@ -36,7 +36,6 @@ public class AdvisorLogin extends AppCompatActivity {
                 DB.putInformation( DB, email, password, null );         // Delete
                 Toast.makeText( getBaseContext(), "Registeration Success", Toast.LENGTH_LONG ).show();  // Delete
 
-
                 Intent intent = new Intent(getApplicationContext(), AdvisorEvent.class);
                 startActivity(intent);
             }

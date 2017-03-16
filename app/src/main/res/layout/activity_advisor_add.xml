@@ -21,34 +21,41 @@
 
         <EditText
             style="@style/EditTextStyle"
-            android:hint="@string/advisor_add_event_name"/>
+            android:hint="@string/advisor_add_event_name"
+            android:id="@+id/eventName" />
 
         <EditText
             style="@style/EditTextStyle"
-            android:hint="@string/activity_advisor_event_time"/>
+            android:hint="@string/activity_advisor_event_time"
+            android:id="@+id/eventTime" />
 
         <EditText
             style="@style/EditTextStyle"
-            android:hint="@string/advisor_add_event_date"/>
+            android:hint="@string/advisor_add_event_date"
+            android:id="@+id/eventDate" />
 
         <EditText
             style="@style/EditTextStyle"
-            android:hint="@string/advisor_activity_event_location"/>
+            android:hint="@string/advisor_activity_event_location"
+            android:id="@+id/eventLocation" />
 
         <EditText
             style="@style/EditTextStyle"
-            android:hint="@string/advisor_add_organized_by"/>
+            android:hint="@string/advisor_add_organized_by"
+            android:id="@+id/eventOrganizers" />
 
         <EditText
             style="@style/EditTextStyle"
-            android:hint="@string/advisor_add_event_description"/>
+            android:hint="@string/advisor_add_event_description"
+            android:id="@+id/eventDescription" />
 
         <Button
             style="@style/ButtonStyle"
             android:id="@+id/submit_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/advisor_add_submit"/>
+            android:text="@string/advisor_add_submit"
+            android:onClick="onAdvisorSubmit" />
 
 
 
