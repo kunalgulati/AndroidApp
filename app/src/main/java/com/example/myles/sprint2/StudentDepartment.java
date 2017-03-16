@@ -12,24 +12,30 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.Toast;
 
-public class StudentDepartment extends AppCompatActivity {
 
-    private static  final int Total_Rows = DepartmentList.DepartmentInfo.ArtsAndSocialScience.length;           // Total number of faculties in SFU
+public class StudentDepartment extends AppCompatActivity
+{
+    int data = 0;
+
+    private static int Total_Rows = 0;           // Total number of faculties in SFU
     // To be fetched from the Database
 
-    Button BtnArray[] = new Button[Total_Rows];          // An Array of buttons
+    private static Button BtnArray[] = new Button[30];          // An Array of buttons
 
-    //////////////////////////////////////////
-
-
-
+    public static int[] Number = new int[]{3, 1, 1, 10, 1, 1, 4, 26};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_department);
 
+        Bundle bundle = getIntent().getExtras();    // Getting the data from Student Faculty
+        data = bundle.getInt("Send");               // Getting the  data
+
+        Total_Rows = DepartmentList.DepartmentInfo.Department[data].length;
+
         populateDepartment();
+
     }
 
 
@@ -85,7 +91,9 @@ public class StudentDepartment extends AppCompatActivity {
         {
             Button button = BtnArray[row];
 
-            button.setText(DepartmentList.DepartmentInfo.ArtsAndSocialScience[row]);       // Displays the text at the Center
+            button.setText(DepartmentList.DepartmentInfo.Department[data][row]);
+            //button.setText(DepartmentList. fun(row));
+
             // Name of faculties are supposed to fetched from the database
 
             button.setGravity(Gravity.CENTER);                     // Used for aligning the text
@@ -100,8 +108,6 @@ public class StudentDepartment extends AppCompatActivity {
     // used for on click
     private void gridButtonClick()
     {
-        Toast.makeText(this, "Department Activity" , Toast.LENGTH_LONG).show();
-
         Intent intent = new Intent(getApplicationContext(), StudentEvent.class);
         startActivity(intent);
     }

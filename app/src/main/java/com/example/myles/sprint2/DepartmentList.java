@@ -16,12 +16,45 @@ public class DepartmentList {
 
         public static abstract class DepartmentInfo
         {
+
+
             // Name of Faculties
-            public static final String[] Faculty = new String[]{"Faculty of Applied Science","Faculty of Beedie School of Business",
+            public static  String[] Faculty = new String[]{"Faculty of Applied Science","Beedie School of Business",
                     "Faulty of Education", "Faculty of Environment",
                     "Faculty of Science", "Faculty of Health Sciences",
                     "Faculty of Communication, Art and Technology", "Faculty of Arts and Social Sciences"
             };
+
+            public static String[][] Department = {
+                    { "School of Computing Science", "School of Engineering Science","School of Mechatronic Systems Engineering" },
+                    {"Beedie School of Business"},
+                    {"Department of Education" },
+                    { "Faculty of Environment home",
+                            "Department of Archaeology" , "Centre for Sustainable Community Development" ,
+                            "Environmental Science program" , "Department of Geography" ,
+                            "School of Resource and Environmental Management" ,
+                            "Bachelor of Environment" , "Ecological Restoration" ,
+                            "Heritage Resource Management" , "Resource and Environmental Planning" },
+                    { "Department of Sciences" },
+                    { "Department of Health Sciences" },
+                    { "School of Communication" , "School for the Contemporary Arts" ,
+                            "School of Interactive Arts and Technology" , "Publishing program"
+                    },
+                    { "Department of Sociology and Anthropology", "Asia-Canada program",
+                            "Cognitive Science program", "School of Criminology",
+                            "Department of Economics", "Department of English",
+                            "Department of First Nations Studies", "French Cohort program",
+                            "Department of French", "Department of Gender, Sexuality, and Women's Studies",
+                            "Department of Gerontology", "Graduate Liberal Studies program",
+                            "Hellenic Studies program", "Department of History",
+                            "Department of Humanities", "School for International Studies",
+                            "Labour Studies program", "Language Training Institute",
+                            "Latin American Studies program", "Department of Linguistics",
+                            "Department of Philosophy", "Department of Political Science",
+                            "Department of Psychology", "School of Public Policy",
+                            "Urban Studies program", "World Literature program"}
+            };
+
 
             // List of departments in "Arts and Social Scince"
             public static final String[] ArtsAndSocialScience = new String[]{ "Department of Sociology and Anthropology", "Asia-Canada program",

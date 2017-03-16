@@ -20,6 +20,8 @@ public class StudentFaculty extends AppCompatActivity {
 
     Button BtnArray[] = new Button[Total_Faculties];          // An Array of buttons
 
+    public final static  String message = "send";
+
     // Name of All the Faculties are fetched from the Class DepartmentList
 
     @Override
@@ -100,17 +102,13 @@ public class StudentFaculty extends AppCompatActivity {
     {
         int intValue = 9;
 
-        Toast.makeText(this, "Welcome to " + DepartmentList.DepartmentInfo.Faculty[position] , Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Welcome to " + DepartmentList.DepartmentInfo.Faculty[position], Toast.LENGTH_LONG).show();
 
-        // Sending the Position to the connecting Activity
-        //Bundle Value = new Bundle();                        // Bundle is a type of clas
-                                                            // Initilizing the Bndle
-        //Value.putInt("index", position);          // Puting the inteer value in the Bundle (Value)
-
-
-        int  R = 1;
         Intent intent = new Intent(getApplicationContext(), StudentDepartment.class);
-        intent.putExtra("Integer_Index", R);
+
+        // Sending the Data to StudentDepartment
+        // The position will be used to identify, which faculty was selected
+        intent.putExtra("Send", position);
         startActivity(intent);
     }
 
