@@ -17,7 +17,7 @@ public class AdvisorEvent extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advisor_event);
 
-        myDb = new advisorDatabase(this);
+        //myDb = new advisorDatabase(this);
 
         addEvent = (Button) findViewById(R.id.add_event_btn);
         editEvent = (Button) findViewById(R.id.edit_event_btn);

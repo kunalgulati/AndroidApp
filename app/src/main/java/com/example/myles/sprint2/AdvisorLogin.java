@@ -20,8 +20,8 @@ public class AdvisorLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_advisor);
 
-        Email =(EditText)findViewById( R.id.advisor_email);          // Delete
-        Password = (EditText)findViewById( R.id.advisor_password );  // Delete
+        /*Email =(EditText)findViewById( R.id.advisor_email);          // Delete
+        Password = (EditText)findViewById( R.id.advisor_password );  // Delete*/
 
         loginBtn = (Button) findViewById(R.id.advisor_login_btn);
 
@@ -29,12 +29,12 @@ public class AdvisorLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                email = Email.getText().toString();     //Delete
+                /*email = Email.getText().toString();     //Delete
                 password = Password.getText().toString();       // Delete
                 // Put If Condition over here
                 advisorDatabase DB = new advisorDatabase(c);      // Delete
                 DB.putInformation( DB, email, password, null );         // Delete
-                Toast.makeText( getBaseContext(), "Registeration Success", Toast.LENGTH_LONG ).show();  // Delete
+                Toast.makeText( getBaseContext(), "Registeration Success", Toast.LENGTH_LONG ).show();  // Delete*/
 
                 Intent intent = new Intent(getApplicationContext(), AdvisorEvent.class);
                 startActivity(intent);
