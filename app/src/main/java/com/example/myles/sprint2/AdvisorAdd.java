@@ -13,11 +13,13 @@ public class AdvisorAdd extends AppCompatActivity {
     advisorDatabase tempDB = new advisorDatabase(this);
     Button submitBtn;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advisor_add);
     }
+
     public void onAdvisorSignup(View v){
         if(v.getId() == R.id.submit_btn){
             EditText eName = (EditText)findViewById(R.id.eventName);
