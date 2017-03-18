@@ -97,8 +97,8 @@ public class StudentDepartment extends AppCompatActivity
             // Name of faculties are supposed to fetched from the database
 
             button.setGravity(Gravity.CENTER);                     // Used for aligning the text
-            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuGold));  // Changing the color of button
-            button.setTextColor(ContextCompat.getColor(this, R.color.sfuRed));  // Changing the color of the text
+            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuRed));  // Changing the color of button
+            button.setTextColor(ContextCompat.getColor(this, R.color.white));  // Changing the color of the text
 
         }
 

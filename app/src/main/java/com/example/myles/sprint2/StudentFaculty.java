@@ -90,8 +90,8 @@ public class StudentFaculty extends AppCompatActivity {
             button.setText(DepartmentList.DepartmentInfo.Faculty[row]);       // Displays the text at the Center "FacultyName[row]"
 
             button.setGravity(Gravity.CENTER);      // Used for aligning the text
-            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuGold));  // Changing the color of button
-            button.setTextColor(ContextCompat.getColor(this,R.color.sfuRed));   // Changing the color of the text
+            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuRed));  // Changing the color of button
+            button.setTextColor(ContextCompat.getColor(this,R.color.white));   // Changing the color of the text
 
         }
 
