@@ -1,8 +1,6 @@
 package com.example.myles.sprint2;
 
-/**
- * Created by press on 2017-03-12.
- */
+
 import android.app.Activity;
 
 public class getSetAdvisor extends Activity{

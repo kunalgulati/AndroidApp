@@ -1,6 +1,7 @@
 package com.example.myles.sprint2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.widget.EditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -34,8 +35,8 @@ public class AdvisorLogin extends AppCompatActivity {
                 checkLogin();
 
 
-                //Intent intent = new Intent(getApplicationContext(), AdvisorEvent.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), AdvisorEvent.class);
+                startActivity(intent);
             }
         });
     }
@@ -45,7 +46,7 @@ public class AdvisorLogin extends AppCompatActivity {
         password = Password.getText().toString();
 
         if(!nonEmptyEntry(email) && !nonEmptyEntry(password)){
-            setEditText("Please enter an valid email and password");
+            setEditText("Please enter a valid email and password");
         } else if(!nonEmptyEntry(email)) {
             setEditText("Please enter a valid email");
         } else if(!nonEmptyEntry(password)){

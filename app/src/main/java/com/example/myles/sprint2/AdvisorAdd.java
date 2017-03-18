@@ -10,41 +10,51 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class AdvisorAdd extends AppCompatActivity {
-    advisorDatabase tempDB = new advisorDatabase(this);
-    Button submitBtn;
 
+    //advisorDatabase tempDB = new advisorDatabase(this);
+    Button submitBtn;
+    EditText eName, eTime, eDate, eLocation, eOrganizers, eDescription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advisor_add);
+
+        eName = (EditText)findViewById(R.id.eventName);
+        eTime = (EditText)findViewById(R.id.eventTime);
+        eDate = (EditText)findViewById(R.id.eventDate);
+        eLocation = (EditText)findViewById(R.id.eventLocation);
+        eOrganizers = (EditText)findViewById(R.id.eventOrganizers);
+        eDescription = (EditText)findViewById(R.id.eventDescription);
+
+        submitBtn = (Button) findViewById(R.id.submit_btn);
+        submitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onAdvisorSubmit();
+            }
+        });
     }
 
-    public void onAdvisorSignup(View v){
-        if(v.getId() == R.id.submit_btn){
-            EditText eName = (EditText)findViewById(R.id.eventName);
-            EditText eTime = (EditText)findViewById(R.id.eventTime);
-            EditText eDate = (EditText)findViewById(R.id.eventDate);
-            EditText eLocation = (EditText)findViewById(R.id.eventLocation);
-            EditText eOrganizers = (EditText)findViewById(R.id.eventOrganizers);
-            EditText eDescription = (EditText)findViewById(R.id.eventDescription);
+    public void onAdvisorSubmit(){
 
-            String eName1 = eName.getText().toString();
-            String eTime1 = eTime.getText().toString();
-            String eDate1 = eDate.getText().toString();
-            String eLocation1 = eLocation.getText().toString();
-            String eOrganizers1 = eOrganizers.getText().toString();
-            String eDescription1 = eDescription.getText().toString();
+        String strName = eName.getText().toString();
+        String strTime = eTime.getText().toString();
+        String strDate = eDate.getText().toString();
+        String strLocation = eLocation.getText().toString();
+        String strOrganizers = eOrganizers.getText().toString();
+        String strDescription = eDescription.getText().toString();
 
-            getSetAdvisor c = new getSetAdvisor();
-            c.setsEventName(eName1);
-            c.setsEventTime(eTime1);
-            c.setsEventDate(eDate1);
-            c.setsEventLocation(eLocation1);
-            c.setsEventOrganizers(eOrganizers1);
-            c.setsEventDescription(eDescription1);
 
-            tempDB.insertContact(c);
-        }
+        getSetAdvisor c = new getSetAdvisor();
+        c.setsEventName(strName);
+        c.setsEventTime(strTime);
+        c.setsEventDate(strDate);
+        c.setsEventLocation(strLocation);
+        c.setsEventOrganizers(strOrganizers);
+        c.setsEventDescription(strDescription);
+
+        //tempDB.insertContact(c);
+
     }
 }

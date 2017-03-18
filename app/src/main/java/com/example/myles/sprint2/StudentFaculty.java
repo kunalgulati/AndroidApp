@@ -53,6 +53,7 @@ public class StudentFaculty extends AppCompatActivity {
                     TableRow.LayoutParams.MATCH_PARENT,
                     1.0f));
 
+
             // Padding
             int padding = 25;                       // Declaring the Number of pixels (in DP), to add the padding between the buttons
             tableRow.setPadding(25,padding,25,25);  // function used to add the padding

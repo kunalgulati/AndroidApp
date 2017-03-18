@@ -1,10 +1,5 @@
 package com.example.myles.sprint2;
 
-import android.provider.BaseColumns;
-
-/**
- * Created by Kunal Gulati on 2017-03-13.
- */
 
 public class DepartmentList {
 
