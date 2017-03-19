@@ -5,21 +5,26 @@ package com.example.myles.sprint2;
  */
 import android.app.Activity;
 
-public class getSetAdvisor extends Activity{
+public class getSetAdvisor extends Activity
+{
     String logIn,  passWord, eventName, eventTime, eventDate, eventLocation, eventOrganizers, eventDescription;
 
 
-    public void setsEventName(String eventName){
+    public void setsEventName(String eventName)
+    {
         this.eventName = eventName;
     }
-    public String getEventName(){
+    public String getEventName()
+    {
         return this.eventName;
     }
 
-    public void setsEventTime(String eventTime){
+    public void setsEventTime(String eventTime)
+    {
         this.eventTime = eventTime;
     }
-    public String getEventTime(){
+    public String getEventTime()
+    {
         return this.eventTime;
     }
 

@@ -8,30 +8,63 @@
     android:background="@android:color/background_light"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/StudentEmail"
-        style="@style/EditTextStyle"
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/student_activity_email"
-        android:inputType="textEmailAddress" />
+        android:layout_margin="16dp">
 
-    <EditText
-        android:id="@+id/StudentPassword"
-        style="@style/EditTextStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/student_activity_password"
-        android:inputType="textPassword" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/StudentLogin"
-        style="@style/ButtonStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/student_activity_login"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="258dp" />
+            <EditText
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/StudentEmail"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/activity_advisor_email"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/login_style"/>
+
+            <EditText
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp"
+                android:id="@+id/StudentPassword"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/activity_advisor_password"
+                android:inputType="textPassword"
+                android:background="@drawable/login_style"/>
+
+            <Button
+                android:id="@+id/StudentLogin"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_advisor_login" />
+
+            <TextView
+                android:id="@+id/warning_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/sfuRed"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
 
 </LinearLayout>

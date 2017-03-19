@@ -19,10 +19,10 @@ public class StudentDatabaseOprations extends SQLiteOpenHelper {
     // Creating a Query
     private static final String CREATE_QUERY = "CREATE TABLE "+TableData.TableInfo.TABLE_NAME+"("+ " TEXT,"
             + TableData.TableInfo.USER_ID+" TEXT,"+ TableData.TableInfo.USER_PASS+" TEXT,"
-            + TableData.TableInfo.USER_NAME+" TEXT,"+ TableData.TableInfo.EVENT_NAME+" TEXT );";
+            + TableData.TableInfo.EVENT_NAME+" TEXT );";
 
     // Dropping the table, if we already have a table
-    private static final String SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS " + TableData.TableInfo.TABLE_NAME;
+    //private static final String SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS " + TableData.TableInfo.TABLE_NAME;
 
     public StudentDatabaseOprations(Context context) {
         super( context, TableData.TableInfo.DATABASE_NAME, null, database_version );
@@ -54,8 +54,8 @@ public class StudentDatabaseOprations extends SQLiteOpenHelper {
         ContentValues value = new ContentValues(  );
 
         // Used for adding the information to the database
-        value.put( TableData.TableInfo.EVENT_NAME, Email );
-        value.put( TableData.TableInfo.EVENT_NAME, Password );
+        value.put( TableData.TableInfo.USER_ID, Email );
+        value.put( TableData.TableInfo.USER_PASS, Password );
         value.put( TableData.TableInfo.EVENT_NAME, EventName );
 
         // It returns a long value"telling weather the value has been inserted or not"
@@ -74,7 +74,6 @@ public class StudentDatabaseOprations extends SQLiteOpenHelper {
         String[] coloumns = {
                 TableData.TableInfo.USER_ID,
                 TableData.TableInfo.USER_PASS,
-                TableData.TableInfo.USER_NAME,
                 TableData.TableInfo.EVENT_NAME
         };
 

@@ -1,6 +1,7 @@
 package com.example.myles.sprint2;
 
 import android.content.Context;
+import android.content.Intent;
 import android.widget.EditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -31,11 +32,11 @@ public class AdvisorLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                checkLogin();
+                //checkLogin();
 
 
-                //Intent intent = new Intent(getApplicationContext(), AdvisorEvent.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), AdvisorEvent.class);
+                startActivity(intent);
             }
         });
     }

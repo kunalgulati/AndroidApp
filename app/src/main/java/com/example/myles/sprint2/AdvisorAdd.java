@@ -1,42 +1,66 @@
 package com.example.myles.sprint2;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.Toast;
 
-public class AdvisorAdd extends AppCompatActivity {
-    advisorDatabase tempDB = new advisorDatabase(this);
+public class AdvisorAdd extends AppCompatActivity
+{
+    //advisorDatabase tempDB = new advisorDatabase(this);
+
     Button submitBtn;
-
+    Context ctx = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advisor_add);
+
+
+        submitBtn = (Button) findViewById(R.id.submit_btn);
+
+
+        submitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                EditText AdvisorName = (EditText)findViewById(R.id.advisorName);
+                EditText EventName = (EditText)findViewById(R.id.eventName);
+                EditText Time = (EditText)findViewById(R.id.eventTime);
+                EditText Date = (EditText)findViewById(R.id.eventDate);
+                EditText Location = (EditText)findViewById(R.id.eventLocation);
+                EditText Organizers = (EditText)findViewById(R.id.eventOrganizers);
+                EditText Description = (EditText)findViewById(R.id.eventDescription);
+
+                String DatabaseAdvisorName = AdvisorName.getText().toString();
+                String DatabaseEventName = EventName.getText().toString();
+                String DatabaseTime = Time.getText().toString();
+                String DatabaseDate = Date.getText().toString();
+                String DatabaseLocation = Location.getText().toString();
+                String DatabaseOrganizers = Organizers.getText().toString();
+                String DatabseDescription = Description.getText().toString();
+
+                AdvisorDatabaseOperations DB = new AdvisorDatabaseOperations(ctx);
+                DB.putInformation( DB, DatabaseAdvisorName, DatabaseEventName,DatabaseTime, DatabaseDate,
+                        DatabaseLocation, DatabaseOrganizers, DatabseDescription);
+
+                Toast.makeText(ctx, "QUesry Anjd jen", Toast.LENGTH_SHORT).show();
+                
+                finish();
+
+                /*Error Maybe*/
+            }
+        });
     }
 
-    public void onAdvisorSignup(View v){
-        if(v.getId() == R.id.submit_btn){
-            EditText eName = (EditText)findViewById(R.id.eventName);
-            EditText eTime = (EditText)findViewById(R.id.eventTime);
-            EditText eDate = (EditText)findViewById(R.id.eventDate);
-            EditText eLocation = (EditText)findViewById(R.id.eventLocation);
-            EditText eOrganizers = (EditText)findViewById(R.id.eventOrganizers);
-            EditText eDescription = (EditText)findViewById(R.id.eventDescription);
 
-            String eName1 = eName.getText().toString();
-            String eTime1 = eTime.getText().toString();
-            String eDate1 = eDate.getText().toString();
-            String eLocation1 = eLocation.getText().toString();
-            String eOrganizers1 = eOrganizers.getText().toString();
-            String eDescription1 = eDescription.getText().toString();
 
-            getSetAdvisor c = new getSetAdvisor();
+
+            /*getSetAdvisor c = new getSetAdvisor();
             c.setsEventName(eName1);
             c.setsEventTime(eTime1);
             c.setsEventDate(eDate1);
@@ -44,7 +68,6 @@ public class AdvisorAdd extends AppCompatActivity {
             c.setsEventOrganizers(eOrganizers1);
             c.setsEventDescription(eDescription1);
 
-            tempDB.insertContact(c);
-        }
-    }
+            tempDB.insertContact(c);*/
+
 }

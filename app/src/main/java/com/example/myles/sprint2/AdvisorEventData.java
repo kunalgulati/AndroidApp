@@ -6,23 +6,32 @@ import android.provider.BaseColumns;
  * Created by Kunal Gulati on 2017-03-10.
  */
 
-public class TableData {
+public class AdvisorEventData {
 
-    public TableData()
+    public AdvisorEventData()
     {
 
     }
 
-    public static abstract class TableInfo implements BaseColumns
+    public static abstract class AdvisorData implements BaseColumns
     {
-        // Add the user information you want to store
-        public static final String USER_ID = "user_id";                 // E-Mail ID of the user
-        public static final String USER_PASS = "user_pass";             // Password of the user
-        public static final String EVENT_NAME = "event_name";           // Name of the event, selected by the user
+        public static  String ADVISOR_EMAIL = "Email";
+        public static  String ADVISOR_PASSWORD = "Password";
+
+        public static String ADVISOR_NAME = "Name";
+        public static  String ADVISOR_EVENT_NAME = "EventName";
+
+        public static  String ADVISOR_EVENT_TIME = "EventTime";
+        public static  String ADVISOR_EVENT_DATE = "EventDate";
+
+        public static  String ADVISOR_EVENT_LOCTION = "EventLocation";
+        public static String ADVISOR_EVENT_ORGAIZERS = "EventOrganizers";
+
+        public static String ADVISORS_EVENT_DESCRIPTION = "EventDescription";
 
 
-        public static final String DATABASE_NAME = "user_info";      // Name of the Database
-        public static final String TABLE_NAME = "reg_info";         // Name of the Table
+        public static final String DATABASE_NAME = "Adisors_Event";      // Name of the Database
+        public static final String TABLE_NAME = "Event_Info";         // Name of the Table
     }
 
 }

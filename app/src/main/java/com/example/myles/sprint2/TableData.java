@@ -18,7 +18,6 @@ public class TableData {
         // Add the user information you want to store
         public static final String USER_ID = "user_id";                 // E-Mail ID of the user
         public static final String USER_PASS = "user_pass";             // Password of the user
-        public static final String USER_NAME = "user_name";             // Name of the User
         public static final String EVENT_NAME = "event_name";           // Name of the event, selected by the user
 
 

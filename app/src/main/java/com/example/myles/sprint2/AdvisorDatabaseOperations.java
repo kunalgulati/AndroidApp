@@ -11,17 +11,18 @@ import android.util.Log;
  * Created by Kunal Gulati on 2017-03-17.
  */
 
-public class AdvisorDatbaseOperations extends SQLiteOpenHelper
+public class AdvisorDatabaseOperations extends SQLiteOpenHelper
 {
     public static final int database_version = 1;
 
     // Creating a Query
-    private static final String CREATE_QUERY = "CREATE TABLE "+AdvisorEventData.AdvisorData.ADVISOR_NAME +"("+ " TEXT,"
+    private static final String CREATE_QUERY = "CREATE TABLE "+AdvisorEventData.AdvisorData.TABLE_NAME
+            +"("+  AdvisorEventData.AdvisorData.ADVISOR_NAME+" TEXT,"
             + AdvisorEventData.AdvisorData.ADVISOR_EVENT_NAME+" TEXT,"+ AdvisorEventData.AdvisorData.ADVISOR_EVENT_TIME+" TEXT,"
             + AdvisorEventData.AdvisorData.ADVISOR_EVENT_DATE+" TEXT,"+ AdvisorEventData.AdvisorData.ADVISOR_EVENT_LOCTION+" TEXT,"
             + AdvisorEventData.AdvisorData.ADVISOR_EVENT_ORGAIZERS+" TEXT,"+ AdvisorEventData.AdvisorData.ADVISORS_EVENT_DESCRIPTION+" TEXT );";
 
-    public AdvisorDatbaseOperations(Context context) {
+    public AdvisorDatabaseOperations(Context context) {
         super(context, AdvisorEventData.AdvisorData.DATABASE_NAME, null, database_version);
         Log.d( "Database operations", "Database created" );
 
@@ -41,8 +42,8 @@ public class AdvisorDatbaseOperations extends SQLiteOpenHelper
 
 
 
-    public void putInformation(AdvisorDatbaseOperations Database, String Name, /*String Password,*/ String EventName,
-        String EventTime, String EventDate, String EventLocation, String EventOrganizer, String EventDescription )
+    public void putInformation(AdvisorDatabaseOperations Database, String Name, /*String Password,*/ String EventName,
+                               String EventTime, String EventDate, String EventLocation, String EventOrganizer, String EventDescription )
     {
         // Gets the data repository in write mode
         SQLiteDatabase SQ = Database.getWritableDatabase();
@@ -68,7 +69,7 @@ public class AdvisorDatbaseOperations extends SQLiteOpenHelper
         Log.d( "DataBase Operations", " One Raw Inserted" );
     }
 
-    public Cursor getInformation(StudentDatabaseOprations dop)
+    public Cursor getInformation(AdvisorDatabaseOperations dop)
     {
         SQLiteDatabase SQ = dop.getReadableDatabase();
 
