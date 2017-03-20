@@ -1,6 +1,7 @@
 package com.example.myles.sprint2;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -47,10 +48,11 @@ public class AdvisorAdd extends AppCompatActivity
                 AdvisorDatabaseOperations DB = new AdvisorDatabaseOperations(ctx);
                 DB.putInformation( DB, DatabaseAdvisorName, DatabaseEventName,DatabaseTime, DatabaseDate,
                         DatabaseLocation, DatabaseOrganizers, DatabseDescription);
+                DB.close();
 
-                Toast.makeText(ctx, "QUesry Anjd jen", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ctx, "Event Added", Toast.LENGTH_SHORT).show();
                 
-                finish();
+               finish();
 
                 /*Error Maybe*/
             }

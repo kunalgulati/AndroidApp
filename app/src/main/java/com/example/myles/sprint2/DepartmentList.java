@@ -26,7 +26,7 @@ public class DepartmentList {
             };
 
             public static String[][] Department = {
-                    { "School of Computing Science", "School of Engineering Science","School of Mechatronic Systems Engineering" },
+                    {"School of Computing Science", "School of Engineering Science","School of Mechatronic Systems Engineering" },
                     {"Beedie School of Business"},
                     {"Department of Education" },
                     { "Faculty of Environment home",

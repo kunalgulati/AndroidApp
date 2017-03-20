@@ -15,22 +15,22 @@ public class AdvisorEventData {
 
     public static abstract class AdvisorData implements BaseColumns
     {
-        public static  String ADVISOR_EMAIL = "Email";
-        public static  String ADVISOR_PASSWORD = "Password";
+        public static final String ADVISOR_EMAIL = "Email";
+        public static final String ADVISOR_PASSWORD = "Password";
 
-        public static String ADVISOR_NAME = "Name";
-        public static  String ADVISOR_EVENT_NAME = "EventName";
+        public static final String ADVISOR_NAME = "Name";
+        public static final String ADVISOR_EVENT_NAME = "EventName";
 
-        public static  String ADVISOR_EVENT_TIME = "EventTime";
-        public static  String ADVISOR_EVENT_DATE = "EventDate";
+        public static final String ADVISOR_EVENT_TIME = "EventTime";
+        public static final String ADVISOR_EVENT_DATE = "EventDate";
 
-        public static  String ADVISOR_EVENT_LOCTION = "EventLocation";
-        public static String ADVISOR_EVENT_ORGAIZERS = "EventOrganizers";
+        public static final String ADVISOR_EVENT_LOCTION = "EventLocation";
+        public static final String ADVISOR_EVENT_ORGANIZERS = "EventOrganizers";
 
-        public static String ADVISORS_EVENT_DESCRIPTION = "EventDescription";
+        public static final String ADVISORS_EVENT_DESCRIPTION = "EventDescription";
 
 
-        public static final String DATABASE_NAME = "Adisors_Event";      // Name of the Database
+        public static final String DATABASE_NAME = "Advisors_Event";      // Name of the Database
         public static final String TABLE_NAME = "Event_Info";         // Name of the Table
     }
 

@@ -40,7 +40,7 @@ public class StudentLogin extends AppCompatActivity {
                 Cursor CR = DOP.getInformation(DOP);
                 CR.moveToFirst();
 
-                boolean LoginStatus = false;
+                boolean LoginStatus = true;
                 do {
                     if (email.equals(CR.getString(0)) && password.equals(CR.getString(1))) {
                         LoginStatus = true;                  // Becomes true if the identity matches
