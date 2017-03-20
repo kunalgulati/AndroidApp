@@ -6,6 +6,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -91,8 +92,7 @@ public class StudentFaculty extends AppCompatActivity {
 
             button.setGravity(Gravity.CENTER);      // Used for aligning the text
             button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuRed));  // Changing the color of button
-            button.setTextColor(ContextCompat.getColor(this,R.color.white));   // Changing the color of the text
-
+            button.setTextColor(ContextCompat.getColor(this,R.color.White));   // Changing the color of the text
         }
 
     }
@@ -101,8 +101,6 @@ public class StudentFaculty extends AppCompatActivity {
     // used for on click
     protected void gridButtonClick(int position)
     {
-        int intValue = 9;
-
         Toast.makeText(this, "Welcome to " + DepartmentList.DepartmentInfo.Faculty[position], Toast.LENGTH_LONG).show();
 
         Intent intent = new Intent(getApplicationContext(), StudentDepartment.class);
@@ -110,6 +108,7 @@ public class StudentFaculty extends AppCompatActivity {
         // Sending the Data to StudentDepartment
         // The position will be used to identify, which faculty was selected
         intent.putExtra("Send", position);
+        Log.d("FacultyPage", "Fac_Ind:  "+position);
         startActivity(intent);
     }
 

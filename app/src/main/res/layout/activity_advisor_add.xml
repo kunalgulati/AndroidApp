@@ -21,18 +21,25 @@
 
         <EditText
             style="@style/EditTextStyle"
+            android:hint="@string/advisor_add_advisor_name"
+            android:id="@+id/advisorName" />
+
+        <EditText
+            style="@style/EditTextStyle"
             android:hint="@string/advisor_add_event_name"
             android:id="@+id/eventName" />
 
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/activity_advisor_event_time"
-            android:id="@+id/eventTime" />
+            android:id="@+id/eventTime"
+            android:inputType="time"/>
 
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/advisor_add_event_date"
-            android:id="@+id/eventDate" />
+            android:id="@+id/eventDate"
+            android:inputType="date" />
 
         <EditText
             style="@style/EditTextStyle"

@@ -32,7 +32,7 @@ public class AdvisorLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                checkLogin();
+                //checkLogin();
 
 
                 Intent intent = new Intent(getApplicationContext(), AdvisorEvent.class);

@@ -33,8 +33,12 @@ public class advisorDatabase extends SQLiteOpenHelper {
             "logIn text not null , passWord text not null , eventName text not null , eventTime text not null , eventDate text not null , eventLocation text not null , eventOrganizers text not null , eventDescription text not null );";
 
     public advisorDatabase(Context context){
-        super(context , DATABASE_NAME , null , DATABASE_VERSION);
-        SQLiteDatabase db = this.getWritableDatabase();
+
+        super( context, DATABASE_NAME, null, DATABASE_VERSION );
+
+        //SQLiteDatabase db = this.getWritableDatabase();
+
+        Log.d( "Database operations", "Database created" );
     }
 
     @Override
@@ -43,7 +47,8 @@ public class advisorDatabase extends SQLiteOpenHelper {
         this.db = db;
     }
 
-    public void insertContact(getSetAdvisor c){
+    public void insertContact(getSetAdvisor c)
+    {
         db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
 

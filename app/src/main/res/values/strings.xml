@@ -16,6 +16,7 @@
 
     <!--Advisor Add Activity-->
     <string name="advisor_add_fields">Fill in the Fields</string>
+    <string name="advisor_add_advisor_name">Name of Advisor</string>
     <string name="advisor_add_event_name">Name of the event</string>
     <string name="activity_advisor_event_time">Time of the Event</string>
     <string name="advisor_add_event_date">Event Date</string>
