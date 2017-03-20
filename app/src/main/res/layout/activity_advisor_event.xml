@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context="com.example.myles.sprint2.AdvisorEvent">
+
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/add_event_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/advisor_event_add_event"/>
+
+    <!--TODO: Sprint 3-->
+    <!--<Button
+        style="@style/ButtonStyle"
+        android:id="@+id/edit_event_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/advisor_event_edit_event"/>-->
+
+    <!--TODO: Sprint 3-->
+    <!--<Button
+        style="@style/ButtonStyle"
+        android:id="@+id/view_history_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/advisor_event_view_history"/>-->
+
+
+</LinearLayout>

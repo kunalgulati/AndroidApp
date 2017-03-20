@@ -4,18 +4,41 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/display"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/display"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="SFU Resources">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AdvisorLogin"
+            android:label="Advisor Login"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AdvisorEvent"
+            android:label="Event Management"
+            android:parentActivityName=".AdvisorLogin"/>
+        <activity android:name=".AdvisorAdd"
+            android:label="Add Event"
+            android:parentActivityName=".AdvisorEvent"/>
+        <activity android:name=".StudentLogin"
+            android:label="Student Login"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".StudentDepartment"
+            android:label="Department"
+            android:parentActivityName=".StudentFaculty"/>
+        <activity android:name=".StudentFaculty"
+            android:label="Faculty"
+            android:parentActivityName=".StudentLogin"/>
+        <activity android:name=".StudentEvent"
+            android:label="Events" />
+        <activity android:name=".StudentEventDisplay"
+            ></activity>
     </application>
 
 </manifest>
