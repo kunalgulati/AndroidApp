@@ -7,31 +7,25 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-/**
- * Created by Kunal Gulati on 2017-03-17.
- */
-
-public class AdvisorDatabaseOperations extends SQLiteOpenHelper
-{
+public class AdvisorDatabaseOperations extends SQLiteOpenHelper {
     public static final int database_version = 1;
 
     // Creating a Query
-    private static final String CREATE_QUERY = "CREATE TABLE "+AdvisorEventData.AdvisorData.TABLE_NAME
-            +"("+  AdvisorEventData.AdvisorData.ADVISOR_NAME+" TEXT, "
-            + AdvisorEventData.AdvisorData.ADVISOR_EVENT_NAME+" TEXT, "+ AdvisorEventData.AdvisorData.ADVISOR_EVENT_TIME+" TEXT, "
-            + AdvisorEventData.AdvisorData.ADVISOR_EVENT_DATE+" TEXT, "+ AdvisorEventData.AdvisorData.ADVISOR_EVENT_LOCTION+" TEXT, "
-            + AdvisorEventData.AdvisorData.ADVISOR_EVENT_ORGANIZERS+" TEXT, "+ AdvisorEventData.AdvisorData.ADVISORS_EVENT_DESCRIPTION+" TEXT );";
+    private static final String CREATE_QUERY = "CREATE TABLE " + AdvisorEventData.AdvisorData.TABLE_NAME
+            + "(" + AdvisorEventData.AdvisorData.ADVISOR_NAME + " TEXT, "
+            + AdvisorEventData.AdvisorData.ADVISOR_EVENT_NAME + " TEXT, " + AdvisorEventData.AdvisorData.ADVISOR_EVENT_TIME + " TEXT, "
+            + AdvisorEventData.AdvisorData.ADVISOR_EVENT_DATE + " TEXT, " + AdvisorEventData.AdvisorData.ADVISOR_EVENT_LOCTION + " TEXT, "
+            + AdvisorEventData.AdvisorData.ADVISOR_EVENT_ORGANIZERS + " TEXT, " + AdvisorEventData.AdvisorData.ADVISORS_EVENT_DESCRIPTION + " TEXT );";
 
     public AdvisorDatabaseOperations(Context context) {
         super(context, AdvisorEventData.AdvisorData.DATABASE_NAME, null, database_version);
-        Log.d( "Database Operations", "Database created" );
+        Log.d("Database Operations", "Database created");
     }
 
     @Override
-    public void onCreate(SQLiteDatabase database)
-    {
+    public void onCreate(SQLiteDatabase database) {
         database.execSQL(CREATE_QUERY);
-        Log.d( "Database Operations", "Table Created" );
+        Log.d("Database Operations", "Table Created");
     }
 
     @Override
@@ -40,8 +34,7 @@ public class AdvisorDatabaseOperations extends SQLiteOpenHelper
     }
 
     public void putInformation(AdvisorDatabaseOperations Database, String Name, /*String Password,*/ String EventName,
-                               String EventTime, String EventDate, String EventLocation, String EventOrganizer, String EventDescription )
-    {
+                               String EventTime, String EventDate, String EventLocation, String EventOrganizer, String EventDescription) {
         // Gets the data repository in write mode
         SQLiteDatabase SQ = Database.getWritableDatabase();
 
@@ -49,25 +42,24 @@ public class AdvisorDatabaseOperations extends SQLiteOpenHelper
         ContentValues value = new ContentValues();
 
         // Used for adding the information to the database
-        value.put(AdvisorEventData.AdvisorData.ADVISOR_NAME, Name );
+        value.put(AdvisorEventData.AdvisorData.ADVISOR_NAME, Name);
         value.put(AdvisorEventData.AdvisorData.ADVISOR_EVENT_NAME, EventName);
 
         value.put(AdvisorEventData.AdvisorData.ADVISOR_EVENT_TIME, EventTime);
-        value.put( AdvisorEventData.AdvisorData.ADVISOR_EVENT_DATE, EventDate );
+        value.put(AdvisorEventData.AdvisorData.ADVISOR_EVENT_DATE, EventDate);
 
         value.put(AdvisorEventData.AdvisorData.ADVISOR_EVENT_LOCTION, EventLocation);
-        value.put( AdvisorEventData.AdvisorData.ADVISOR_EVENT_ORGANIZERS, EventOrganizer);
+        value.put(AdvisorEventData.AdvisorData.ADVISOR_EVENT_ORGANIZERS, EventOrganizer);
 
-        value.put( AdvisorEventData.AdvisorData.ADVISORS_EVENT_DESCRIPTION, EventDescription );
+        value.put(AdvisorEventData.AdvisorData.ADVISORS_EVENT_DESCRIPTION, EventDescription);
 
         // It returns a long value "telling whether the value has been inserted or not"
-        long k = SQ.insert( AdvisorEventData.AdvisorData.TABLE_NAME, null, value );
+        long k = SQ.insert(AdvisorEventData.AdvisorData.TABLE_NAME, null, value);
 
-        Log.d( "DataBase Operations", " One Raw Inserted" );
+        Log.d("DataBase Operations", " One Raw Inserted");
     }
 
-    public Cursor getInformation(AdvisorDatabaseOperations dop)
-    {
+    public Cursor getInformation(AdvisorDatabaseOperations dop) {
         SQLiteDatabase SQ = dop.getReadableDatabase();
 
         // Projection that specifies which columns from the database
@@ -83,7 +75,7 @@ public class AdvisorDatabaseOperations extends SQLiteOpenHelper
         };
 
         //Filter the results WHERE "Title" = "My Title"
-        Cursor CR = SQ.query( AdvisorEventData.AdvisorData.TABLE_NAME, coloumns, null, null, null, null, null );
+        Cursor CR = SQ.query(AdvisorEventData.AdvisorData.TABLE_NAME, coloumns, null, null, null, null, null);
         return CR;
     }
 }

@@ -16,12 +16,13 @@ import android.widget.Toast;
 
 public class StudentFaculty extends AppCompatActivity {
 
-    private static  final int Total_Faculties = DepartmentList.DepartmentInfo.Faculty.length;           // Total number of faculties in SFU
-    // To be fetched from the Database
+    // Total number of faculties in SFU
+    private static final int Total_Faculties = DepartmentList.DepartmentInfo.Faculty.length;
 
-    Button BtnArray[] = new Button[Total_Faculties];          // An Array of buttons
+    // Creates a button for each faculty at SFU
+    Button BtnArray[] = new Button[Total_Faculties];
 
-    public final static  String message = "send";
+    public final static String message = "send";
 
     // Name of All the Faculties are fetched from the Class DepartmentList
 
@@ -30,22 +31,18 @@ public class StudentFaculty extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_faculty);
 
-
         populateFaculty();
     }
-
 
     private void populateFaculty() {
 
         TableLayout table = (TableLayout) findViewById(R.id.StudentFaculty);
 
-        for(int row = 0; row  < Total_Faculties; row++)
-        {
+        for (int row = 0; row < Total_Faculties; row++) {
             TableRow tableRow = new TableRow(this);
             tableRow.setLayoutParams(new TableLayout.LayoutParams(
                     TableLayout.LayoutParams.MATCH_PARENT,
-                    TableLayout.LayoutParams.MATCH_PARENT,
-                    0));
+                    TableLayout.LayoutParams.WRAP_CONTENT));
             table.addView(tableRow);
 
             Button button = new Button(this);
@@ -54,19 +51,19 @@ public class StudentFaculty extends AppCompatActivity {
                     TableRow.LayoutParams.MATCH_PARENT,
                     1.0f));
 
-
             // Padding
-            int padding = 25;                       // Declaring the Number of pixels (in DP), to add the padding between the buttons
-            tableRow.setPadding(25,padding,25,25);  // function used to add the padding
+            // Declaring the Number of pixels (in DP), to add the padding between the buttons
+            int padding = 25;
+            tableRow.setPadding(padding, padding, padding, padding);
 
-
-            final int finalRow = row;               // Temporary variable for row
+            // Temporary variable for row
+            final int currentRow = row;
 
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
 
-                    gridButtonClick(finalRow);
+                    gridButtonClick(currentRow);
                 }
             });
 
@@ -75,40 +72,42 @@ public class StudentFaculty extends AppCompatActivity {
 
             //Adding Buttons to the Array
             BtnArray[row] = button;
-        }                                           // end of for loop
+        } // end of for loop
 
         ProcessButtons();
 
     }
 
-
-    private void ProcessButtons()               // Adding data and making changed to the buttons
+    // Adding data and making changed to the buttons
+    private void ProcessButtons()
     {
-        for (int row = 0; row < Total_Faculties; row++)
-        {
+        for (int row = 0; row < Total_Faculties; row++) {
             Button button = BtnArray[row];
 
-            button.setText(DepartmentList.DepartmentInfo.Faculty[row]);       // Displays the text at the Center "FacultyName[row]"
+            // Displays the text at the Center "FacultyName[row]"
+            button.setText(DepartmentList.DepartmentInfo.Faculty[row]);
 
-            button.setGravity(Gravity.CENTER);      // Used for aligning the text
-            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuRed));  // Changing the color of button
-            button.setTextColor(ContextCompat.getColor(this,R.color.white));   // Changing the color of the text
+            // Used for aligning the text
+            button.setGravity(Gravity.CENTER);
+            // Changing the color of button
+            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuRed));
+            // Changing the color of the text
+            button.setTextColor(ContextCompat.getColor(this, R.color.white));
         }
 
     }
 
 
     // used for on click
-    protected void gridButtonClick(int position)
-    {
-        Toast.makeText(this, "Welcome to " + DepartmentList.DepartmentInfo.Faculty[position], Toast.LENGTH_LONG).show();
+    protected void gridButtonClick(int position) {
+        //Toast.makeText(this, "Welcome to " + DepartmentList.DepartmentInfo.Faculty[position], Toast.LENGTH_LONG).show();
 
         Intent intent = new Intent(getApplicationContext(), StudentDepartment.class);
 
         // Sending the Data to StudentDepartment
         // The position will be used to identify, which faculty was selected
         intent.putExtra("Send", position);
-        Log.d("FacultyPage", "Fac_Ind:  "+position);
+        Log.d("FacultyPage", "Fac_Ind:  " + position);
         startActivity(intent);
     }
 

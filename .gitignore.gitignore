@@ -26,3 +26,7 @@ local.properties
 # Log files
 *.log
 
+# Android Studio
+.idea
+
+
