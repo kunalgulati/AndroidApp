@@ -12,12 +12,6 @@ public class MainActivity extends AppCompatActivity {
     Button studentBtn;
     Button advisorBtn;
 
-    // Adding Dummmy Students to the Student Login Database
-    String Student_Login_Email = "a";     //"student@sfu.ca";
-    String Student_Login_Password = "a";
-    Context ctx = this;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,11 +24,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
-                StudentDatabaseOperations DB = new StudentDatabaseOperations( ctx );
-                DB.putInformation( DB, Student_Login_Email, Student_Login_Password, null );         // Delete
-
-                Intent intent = new Intent(getApplicationContext(), StudentLogin.class);
+                Intent intent = new Intent(getApplicationContext(), StudentFaculty.class);
                 startActivity(intent);
             }
         });

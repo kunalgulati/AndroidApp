@@ -26,15 +26,12 @@
         <activity android:name=".AdvisorAdd"
             android:label="Add Event"
             android:parentActivityName=".AdvisorEvent"/>
-        <activity android:name=".StudentLogin"
-            android:label="Student Login"
-            android:parentActivityName=".MainActivity"/>
         <activity android:name=".StudentDepartment"
             android:label="Department"
             android:parentActivityName=".StudentFaculty"/>
         <activity android:name=".StudentFaculty"
             android:label="Faculty"
-            android:parentActivityName=".StudentLogin"/>
+            android:parentActivityName=".MainActivity"/>
         <activity android:name=".StudentEvent"
             android:label="Events" />
         <activity android:name=".StudentEventDisplay"
