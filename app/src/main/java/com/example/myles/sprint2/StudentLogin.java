@@ -36,7 +36,7 @@ public class StudentLogin extends AppCompatActivity {
                 email = Email.getText().toString();             // Extracting the text entered in the Email block
                 password = Password.getText().toString();    // Extracting the text entered in the Password block
 
-                StudentDatabaseOprations DOP = new StudentDatabaseOprations(ctx);
+                StudentDatabaseOperations DOP = new StudentDatabaseOperations(ctx);
                 Cursor CR = DOP.getInformation(DOP);
                 CR.moveToFirst();
 
@@ -70,7 +70,7 @@ public class StudentLogin extends AppCompatActivity {
                 password = Password.getText().toString();       // Delete
 
                 // Put If Condition over here
-                StudentDatabaseOprations DB = new StudentDatabaseOprations( ctx );      // Delete
+                StudentDatabaseOperations DB = new StudentDatabaseOperations( ctx );      // Delete
                 DB.putInformation( DB, email, password, null );         // Delete
 
 

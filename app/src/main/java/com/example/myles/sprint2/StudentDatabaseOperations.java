@@ -7,11 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
-/**
- * Created by Kunal Gulati on 2017-03-10.
- */
 
-public class StudentDatabaseOprations extends SQLiteOpenHelper {
+public class StudentDatabaseOperations extends SQLiteOpenHelper {
 
 
     public static final int database_version = 1;
@@ -24,7 +21,7 @@ public class StudentDatabaseOprations extends SQLiteOpenHelper {
     // Dropping the table, if we already have a table
     //private static final String SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS " + TableData.TableInfo.TABLE_NAME;
 
-    public StudentDatabaseOprations(Context context) {
+    public StudentDatabaseOperations(Context context) {
         super( context, TableData.TableInfo.DATABASE_NAME, null, database_version );
         Log.d( "Database operations", "Database created" );
     }
@@ -45,7 +42,7 @@ public class StudentDatabaseOprations extends SQLiteOpenHelper {
 
     }
 
-    public void putInformation(StudentDatabaseOprations Database, String Email, String Password, String EventName)
+    public void putInformation(StudentDatabaseOperations Database, String Email, String Password, String EventName)
     {
         // Gets the data repository in write mode
         SQLiteDatabase SQ = Database.getWritableDatabase();
@@ -65,7 +62,7 @@ public class StudentDatabaseOprations extends SQLiteOpenHelper {
     }
 
 
-    public Cursor getInformation(StudentDatabaseOprations dop)
+    public Cursor getInformation(StudentDatabaseOperations dop)
     {
         SQLiteDatabase SQ = dop.getReadableDatabase();
 

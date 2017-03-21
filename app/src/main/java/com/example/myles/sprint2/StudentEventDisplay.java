@@ -50,9 +50,6 @@ public class StudentEventDisplay extends AppCompatActivity {
         } while (CR.moveToNext());
 
 
-
-
-
         /*Text.setText("Name of Event: " + EventName + "\n"
                 + "Time: " + EventTime + "\n"
                 + "Date: " + EventDate + "\n"

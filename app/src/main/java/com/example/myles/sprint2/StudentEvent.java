@@ -14,14 +14,15 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class StudentEvent extends AppCompatActivity
 {
 
     Context cxt = this;
-    List<Integer> event_pos;
-    List<Button> BtnArray;
+    ArrayList<Integer> event_pos;
+    ArrayList<Button> BtnArray;
 
     // To be fetched from the Database
     private int Total_Rows = 0; // Temp value
@@ -32,6 +33,9 @@ public class StudentEvent extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_event);
+
+        event_pos = new ArrayList<>();
+        BtnArray = new ArrayList<>();
 
         // Getting extra data
         Bundle bundle = getIntent().getExtras();

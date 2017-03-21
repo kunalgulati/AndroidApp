@@ -2,14 +2,10 @@ package com.example.myles.sprint2;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.ColorDrawable;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                StudentDatabaseOprations DB = new StudentDatabaseOprations( ctx );
+                StudentDatabaseOperations DB = new StudentDatabaseOperations( ctx );
                 DB.putInformation( DB, Student_Login_Email, Student_Login_Password, null );         // Delete
 
                 Intent intent = new Intent(getApplicationContext(), StudentLogin.class);
