@@ -34,8 +34,7 @@ public class AdvisorLogin extends AppCompatActivity {
 
                 //checkLogin();
 
-
-                Intent intent = new Intent(getApplicationContext(), AdvisorEvent.class);
+                Intent intent = new Intent(getApplicationContext(), AdvisorManagement.class);
                 startActivity(intent);
             }
         });

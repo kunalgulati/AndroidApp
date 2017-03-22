@@ -12,17 +12,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentEvent extends AppCompatActivity
-{
+public class StudentEvent extends AppCompatActivity {
 
     Context cxt = this;
-    ArrayList<Integer> event_pos;
-    ArrayList<Button> BtnArray;
+    List<Integer> event_pos;
+    List<Button> BtnArray;
 
     // To be fetched from the Database
     private int Total_Rows = 0; // Temp value
@@ -48,14 +46,14 @@ public class StudentEvent extends AppCompatActivity
         Cursor CR = DB.getInformation(DB);
         CR.moveToFirst();
         do {
-            Log.d("EventLoad", "Fac_Ind:  "+faculty_index);
-            Log.d("EventLoad", "Dep_Ind:  "+department_index);
-            if(DepartmentList.DepartmentInfo.Department[faculty_index][department_index].equals(CR.getString(5))){
+            Log.d("EventLoad", "Fac_Ind:  " + faculty_index);
+            Log.d("EventLoad", "Dep_Ind:  " + department_index);
+            if (DepartmentList.DepartmentInfo.Department[faculty_index][department_index].equals(CR.getString(5))) {
                 Total_Rows++;
                 event_pos.add(CR.getPosition());
             }
 
-        }while(CR.moveToNext());
+        } while (CR.moveToNext());
         CR.close();
 
         populateEvent();
@@ -66,8 +64,7 @@ public class StudentEvent extends AppCompatActivity
 
         TableLayout table = (TableLayout) findViewById(R.id.StudentEventList);
 
-        for(int row = 0; row  < Total_Rows; row++)
-        {
+        for (int row = 0; row < Total_Rows; row++) {
             TableRow tableRow = new TableRow(this);
             tableRow.setLayoutParams(new TableLayout.LayoutParams(
                     TableLayout.LayoutParams.MATCH_PARENT,
@@ -83,7 +80,7 @@ public class StudentEvent extends AppCompatActivity
 
             // Padding
             int padding = 25;                       // Declaring the Number of pixels (in DP), to add the padding between the buttons
-            tableRow.setPadding(25,padding,25,25);  // function used to add the padding
+            tableRow.setPadding(25, padding, 25, 25);  // function used to add the padding
 
 
             // Setting the on CLICK Action
@@ -113,8 +110,7 @@ public class StudentEvent extends AppCompatActivity
         AdvisorDatabaseOperations DB = new AdvisorDatabaseOperations(cxt);
         Cursor CR = DB.getInformation(DB);
 
-        for (int row = 0; row < Total_Rows; row++)
-        {
+        for (int row = 0; row < Total_Rows; row++) {
             Button button = BtnArray.get(row);
             CR.moveToPosition(event_pos.get(row));
 
@@ -136,7 +132,7 @@ public class StudentEvent extends AppCompatActivity
 
     private void gridButtonClick(int pos)                 // used for on click
     {
-        Toast.makeText(this, "Department Activity", Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "Department Activity", Toast.LENGTH_LONG).show();
 
         Intent intent = new Intent(getApplicationContext(), StudentEventDisplay.class);
         intent.putExtra("event_pos", event_pos.get(pos));
