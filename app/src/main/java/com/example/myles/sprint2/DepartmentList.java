@@ -8,7 +8,7 @@ public class DepartmentList {
 
         // Name of Faculties
         public static  String[] Faculty = new String[]{"Faculty of Applied Science","Beedie School of Business",
-                "Faulty of Education", "Faculty of Environment",
+                "Faculty of Education", "Faculty of Environment",
                 "Faculty of Science", "Faculty of Health Sciences",
                 "Faculty of Communication, Art and Technology", "Faculty of Arts and Social Sciences"
         };

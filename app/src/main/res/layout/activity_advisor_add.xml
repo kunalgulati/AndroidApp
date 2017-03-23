@@ -8,26 +8,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-
         tools:context="com.example.myles.sprint2.AdvisorAdd">
 
         <TextView
-            android:padding="16dp"
-            android:textSize="24sp"
-            android:textAlignment="center"
+            style="@style/CategoryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/advisor_add_fields"/>
-
-        <EditText
-            style="@style/EditTextStyle"
-            android:hint="@string/advisor_add_advisor_name"
-            android:id="@+id/advisorName" />
+            android:text="Event Name"/>
 
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/advisor_add_event_name"
             android:id="@+id/eventName" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Time"/>
 
         <EditText
             style="@style/EditTextStyle"
@@ -35,26 +33,92 @@
             android:id="@+id/eventTime"
             android:inputType="time"/>
 
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Date"/>
+
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/advisor_add_event_date"
             android:id="@+id/eventDate"
             android:inputType="date" />
 
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Location"/>
+
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/advisor_activity_event_location"
             android:id="@+id/eventLocation" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Organized By"/>
 
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/advisor_add_organized_by"
             android:id="@+id/eventOrganizers" />
 
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Event Description"/>
+
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/advisor_add_event_description"
             android:id="@+id/eventDescription" />
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Faculty"/>
+
+        <RelativeLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <Spinner
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner_faculty"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            </Spinner>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/CategoryStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Department"/>
+
+        <RelativeLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <Spinner
+                android:spinnerMode="dialog"
+                android:id="@+id/spinner"
+                android:padding="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </Spinner>
+        </RelativeLayout>
 
         <Button
             style="@style/ButtonStyle"

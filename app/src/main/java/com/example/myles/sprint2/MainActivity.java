@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -45,19 +46,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * This will ONLY work if you are connected to the internet on your AVD/Android device
+     * Populates the FireBase database with the Faculty and Departments
+     */
     private void setupDatabase() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference();
+        DatabaseReference myRef;
 
         for(int i = 0; i < DepartmentList.DepartmentInfo.Faculty.length; i++){
             String facultyName = DepartmentList.DepartmentInfo.Faculty[i];
-            myRef = database.getReference();
-            myRef = myRef.child(facultyName);
-            myRef.setValue(i);
+            myRef = database.getReference(facultyName);
+            myRef.setValue(1);
         }
-
-
-        myRef = database.getReference("Faculty of Science");
 
         for(int i = 0; i < DepartmentList.DepartmentInfo.Faculty.length; i++){
 
