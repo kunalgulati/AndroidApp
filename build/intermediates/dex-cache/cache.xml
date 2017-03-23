@@ -47,6 +47,15 @@
         <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\pre-dexed\debug\classes_7738ed4aebd9b4ea1adc27510c9ab3f4ef060daf.jar" />
     </item>
     <item
+        is-multidex="true"
+        jar="C:\Users\Myles\.android\build-cache\a34423fef8e495d4c5a0afcb456609511abd6a32\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ea7c6c84021521fad7f52e6f80d6a76b1dc94ccf\classes.dex" />
+    </item>
+    <item
         is-multidex="false"
         jar="C:\Users\Myles\.android\build-cache\a13ff694d4c9db0be262a5dfa8f7bfa7788dd51b\output\jars\classes.jar"
         jumboMode="false"
@@ -63,6 +72,15 @@
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
         <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\pre-dexed\debug\classes_27e833e0949747e415043a9b2692741c1d706812.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Myles\.android\build-cache\d6e4e35d5c3604bea52db7b91b39c5fae45bf25a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_058eb521072ed394898cfe5513ab79e903468d39\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -102,24 +120,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\ed357152e23ac6057c861b709132f94b4a362ea4\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ac186bfd2db06c7b2aa34208ee6c9e82f6243aa2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\f621638ef601d6ec213c9bdb776fa2a7fe0c7b41\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="518768f3200963fbfec652f498da2c9d39245234">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d655fb7acec9017c1f6f0ecebbc208ed9757b0fb\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="C:\Users\Myles\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.0\support-annotations-25.3.0.jar"
         jumboMode="true"
         optimize="true"
@@ -138,21 +138,30 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\8ea4b798e2552d54d838c6c06a36bccf9ed648ae\output\jars\classes.jar"
+        jar="C:\Users\Myles\.android\build-cache\c84d465ee785bfa0d981cf03bb6e701c3899f3d4\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_759c8be5117cfd3fa5e7ceff917c2cfad44e5810\classes.dex" />
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e904a2cbd24bcd1c202ba4d01e83d4f3d73f7dc0\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\5f54cb32f8b70194ee5d81079c7b0f96163f4c2a\output\jars\classes.jar"
+        jar="C:\Users\Myles\.android\build-cache\247c4b5eb0bc27240626cbe481fe3281391e1e2c\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_6118d19d7bcb8f742ad028d7f7b0e26400b65c3e\classes.dex" />
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_982ec6506201604a884dcbfca1a5bc7a32cbc32c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Myles\.android\build-cache\540cfe52f91591d43c1001fd09e0fbcd9d9820fb\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ee71210e5ca6706cbe167dd97a25566c85cce046\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -162,6 +171,15 @@
         revision="25.0.2"
         sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
         <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\pre-dexed\debug\classes_6f5c2eec7eb34392ca731e62b9194de9c2b13d3b.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Myles\.android\build-cache\2fc82bffda811ecb41548b1892cc57becc068642\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7631f6623698a85bfc930257c3cd9998246fce5a\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -200,24 +218,6 @@
         <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b8c0a580c39d9b0afdc52c8098be98b0ed93f5a9\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\7e58929f7fbe793869d867ce3d8f1d9cf8abbe72\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_654d572ce3c867c7fe1ec76710119f4a91dfdd59\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\60a26ca2456db2eef7e4a9e893196cd787d997b9\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c5e07b64705136c43b3c686b166f61f5731f83e5\classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="C:\Users\Myles\.android\build-cache\48a69b3a8b5f13faa7a59c6f832d7f5a6a4f923e\output\jars\classes.jar"
         jumboMode="false"
@@ -228,21 +228,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\dc806ea3dd7e365c0f667a947da2c49afce98389\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1c00d50dc86f70fda7b202a8432d0c5ac2056380\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\e6f1d793e598be37e249fe2af559f54075c680b4\output\jars\classes.jar"
+        jar="C:\Users\Myles\.android\build-cache\27c42b8dc0b1965a2615c7cdb87125debb98e8f3\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4b328f5718370fcacdb1e8629b4a2ae3aacdddbb\classes.dex" />
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_90ce182bc5b397944cb64f33d7a6c9802c1dc321\classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -252,24 +243,6 @@
         revision="25.0.2"
         sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
         <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\pre-dexed\debug\classes_e228aca930ec7a82d0174192eaef4d91a41aa523.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\3a96a7e777c87861c9f5345726928feb32472fe3\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e4dfbcbf8846d7bc7d50064c2683a6ff3fad37af\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Myles\.android\build-cache\7668087631af97135242df807de69beb89c6a904\output\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
-        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4079eb2478a3188389e59dcf5cd1439bacf6d2bb\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -288,6 +261,33 @@
         revision="25.0.2"
         sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
         <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_669e6ac0563f5bf4d622c70cf6ed3e003c902da5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Myles\.android\build-cache\cefa001cc416295e2104516187f84021d783405e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_80a5cb5a4a1f0d3e80a35fb80ef62bfdff63e1a9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Myles\.android\build-cache\4f7a40f5155c06a96dbb719b6290e2e9105f3f4a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_db605435dbf69727f5c56cb8eb1ed95aa24030c1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Myles\.android\build-cache\4e101f79526e4f7ac03a5946dc450b0614ed453b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="C:\Users\Myles\Documents\Projects\Sprint2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2f79bd776e87fd5af8aa2f8fca03870e1a2ced6d\classes.dex" />
     </item>
 
 </items>

@@ -1,6 +1,7 @@
 package com.example.myles.sprint2;
 
 import android.content.Intent;
+import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,17 +20,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*
-        // This code shows how to add stuff to DB
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("Applied_Science");
-
-        String name = "Computing_Science";
-        myRef = myRef.child(name);
-        myRef.setValue("1");
-        */
-
-        setupDatabase();
+        // Only run to setup database categories. Do not run if database is already running
+        //setupDatabase();
 
         studentBtn = (Button) findViewById(R.id.student_btn);
         advisorBtn = (Button) findViewById(R.id.advisor_btn);
@@ -57,27 +49,31 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference();
 
-        //Database is empty!
-        if(myRef.child("Faculty of Science") == null){
+        for(int i = 0; i < DepartmentList.DepartmentInfo.Faculty.length; i++){
+            String facultyName = DepartmentList.DepartmentInfo.Faculty[i];
+            myRef = database.getReference();
+            myRef = myRef.child(facultyName);
+            myRef.setValue(i);
+        }
 
-            for(int i = 0; i < DepartmentList.DepartmentInfo.Faculty.length; i++){
-                String facultyName = DepartmentList.DepartmentInfo.Faculty[i];
-                myRef = database.getReference();
-                myRef = myRef.child(facultyName);
+
+        myRef = database.getReference("Faculty of Science");
+
+        for(int i = 0; i < DepartmentList.DepartmentInfo.Faculty.length; i++){
+
+            String facultyName = DepartmentList.DepartmentInfo.Faculty[i];
+            myRef = database.getReference(facultyName);
+
+            for(int j = 0; j < DepartmentList.DepartmentInfo.Department[i].length; j++){
+
+                myRef = database.getReference(facultyName);
+                String childName = DepartmentList.DepartmentInfo.Department[i][j];
+                myRef = myRef.child(childName);
                 myRef.setValue(i);
             }
         }
-        myRef = database.getReference("Faculty of Science");
-
-        if(myRef.child("Hello") != null){
-
-            // TODO: get all departments into their correct faculty
-//          myRef = database.getReference();
-            myRef = myRef.child("nice");
-            myRef.setValue(1);
-        }
-
 
 
     }
+
 }

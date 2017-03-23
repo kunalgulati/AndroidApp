@@ -20,7 +20,7 @@
 
 
             <EditText
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:paddingTop="16dp"
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:hint="@string/activity_advisor_email"
                 android:inputType="textEmailAddress"
-                android:background="@drawable/login_style"/>
+                android:background="@drawable/login_style" />
 
             <EditText
                 android:layout_marginEnd="16dp"
