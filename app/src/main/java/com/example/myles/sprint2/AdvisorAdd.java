@@ -18,8 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AdvisorAdd extends AppCompatActivity {
-    //advisorDatabase tempDB = new advisorDatabase(this);
-
     Button submitBtn;
     Spinner spinner;
     Spinner spinnerFaculty;
@@ -34,18 +32,6 @@ public class AdvisorAdd extends AppCompatActivity {
         spinnerFaculty = (Spinner) findViewById(R.id.spinner_faculty);
 
         populateSpinner();
-
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> parent) {
-
-            }
-        });
 
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +70,7 @@ public class AdvisorAdd extends AppCompatActivity {
         });
     }
 
+
     private void addEvent(List<String> event){
         int facultyIndex = event.size() - 1;
         int departmentIndex = event.size() - 2;
@@ -97,7 +84,6 @@ public class AdvisorAdd extends AppCompatActivity {
         //Toast.makeText(this, "ref parent is:" + myRef.getParent(), Toast.LENGTH_LONG).show();
 
         // Add all relevant fields
-        //myRef.child("name").setValue(event.get(0));
         myRef = database.getReference(facultyName + "/" +departmentName + "/" + event.get(0));
         myRef.child("time").setValue(event.get(1));
         myRef.child("date").setValue(event.get(2));
@@ -109,6 +95,7 @@ public class AdvisorAdd extends AppCompatActivity {
 
 
     private void populateSpinner() {
+
         List<String> spinnerArr = new ArrayList<>();
         for(int i = 0; i < DepartmentList.DepartmentInfo.Department.length; i++){
             for(int j = 0; j < DepartmentList.DepartmentInfo.Department[i].length; j++){
@@ -128,7 +115,7 @@ public class AdvisorAdd extends AppCompatActivity {
         }
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(
                 this, android.R.layout.simple_spinner_item, spinnerArr2);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner sItems2 = (Spinner) findViewById(R.id.spinner_faculty);
         sItems2.setAdapter(adapter2);
 
