@@ -2,6 +2,7 @@ package com.example.myles.sprint2;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.view.View;
@@ -64,7 +65,7 @@ public class AdvisorAdd extends AppCompatActivity {
                 eventDetails.add(faculty);
 
                 // TODO: finish this and make sure it works
-                //addEvent(eventDetails);
+                addEvent(eventDetails);
 
                 finish();
             }
@@ -77,14 +78,17 @@ public class AdvisorAdd extends AppCompatActivity {
         int departmentIndex = event.size() - 2;
         String facultyName = event.get(facultyIndex);
         String departmentName = event.get(departmentIndex);
-        //Toast.makeText(this, "department name is:" + departmentName, Toast.LENGTH_LONG).show();
+        Log.i("test","department name is: " + departmentName);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef;
         myRef = database.getReference();
+        myRef.child(departmentName).child(facultyName);
         Toast.makeText(this, "ref parent is:" + myRef.getParent(), Toast.LENGTH_LONG).show();
 
-        myRef = myRef.child(facultyName).child(departmentName).child("hello u fuk im back again");
+        //myRef.push("hello");
+
+        myRef.child("hello u fuk im back again");
         myRef.setValue(1);
     }
 
