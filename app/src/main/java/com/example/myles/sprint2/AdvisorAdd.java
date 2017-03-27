@@ -3,6 +3,7 @@ package com.example.myles.sprint2;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.view.View;
@@ -34,6 +35,18 @@ public class AdvisorAdd extends AppCompatActivity {
 
         populateSpinner();
 
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -64,7 +77,6 @@ public class AdvisorAdd extends AppCompatActivity {
                 eventDetails.add(department);
                 eventDetails.add(faculty);
 
-                // TODO: finish this and make sure it works
                 addEvent(eventDetails);
 
                 finish();
@@ -72,24 +84,26 @@ public class AdvisorAdd extends AppCompatActivity {
         });
     }
 
-    // TODO: figure out how to add events properly
     private void addEvent(List<String> event){
         int facultyIndex = event.size() - 1;
         int departmentIndex = event.size() - 2;
         String facultyName = event.get(facultyIndex);
         String departmentName = event.get(departmentIndex);
-        Log.i("test","department name is: " + departmentName);
+        //Log.i("test","faculty name is: " + facultyName);
+        //Log.i("test","department name is: " + departmentName);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef;
-        myRef = database.getReference();
-        myRef.child(departmentName).child(facultyName);
-        Toast.makeText(this, "ref parent is:" + myRef.getParent(), Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "ref parent is:" + myRef.getParent(), Toast.LENGTH_LONG).show();
 
-        //myRef.push("hello");
-
-        myRef.child("hello u fuk im back again");
-        myRef.setValue(1);
+        // Add all relevant fields
+        //myRef.child("name").setValue(event.get(0));
+        myRef = database.getReference(facultyName + "/" +departmentName + "/" + event.get(0));
+        myRef.child("time").setValue(event.get(1));
+        myRef.child("date").setValue(event.get(2));
+        myRef.child("location").setValue(event.get(3));
+        myRef.child("organizers").setValue(event.get(4));
+        myRef.child("description").setValue(event.get(5));
     }
 
 

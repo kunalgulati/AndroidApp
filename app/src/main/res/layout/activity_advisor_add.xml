@@ -42,8 +42,7 @@
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/advisor_add_event_date"
-            android:id="@+id/eventDate"
-            android:inputType="date" />
+            android:id="@+id/eventDate"/>
 
         <TextView
             style="@style/CategoryStyle"
