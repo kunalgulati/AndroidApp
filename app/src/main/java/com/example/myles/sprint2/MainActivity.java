@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
-
         switch (id){
             case(R.id.about):
                 Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
@@ -66,7 +65,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
-
     }
 
     /**
