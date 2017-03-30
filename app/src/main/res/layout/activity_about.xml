@@ -7,5 +7,36 @@
     android:orientation="vertical"
     tools:context="com.example.myles.sprint2.AboutActivity">
 
+    <TextView
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_title" />
+
+    <TextView
+        android:paddingTop="16dp"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_part_one" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/display"
+        android:contentDescription="@string/sfu_resources_logo"/>
+
+    <RelativeLayout
+        android:id="@+id/rel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/version_1_0" />
+    </RelativeLayout>
 
 </LinearLayout>

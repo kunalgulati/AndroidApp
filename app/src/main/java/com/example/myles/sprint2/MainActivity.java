@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Only run to setup database categories. Do not run if database is already running
-        //setupDatabase();
+        setupDatabase();
 
         studentBtn = (Button) findViewById(R.id.student_btn);
         advisorBtn = (Button) findViewById(R.id.advisor_btn);

@@ -1,6 +1,6 @@
 <resources>
     <!--Main Activity-->
-    <string name="app_name">Sprint2</string>
+    <string name="app_name">SFU Resources</string>
     <string name="activity_main_student">Student</string>
     <string name="activity_main_advisor">Advisor</string>
 
@@ -15,6 +15,7 @@
     <string name="advisor_event_view_history">View History</string>
 
     <!--Advisor Add Activity-->
+    <string name="event_name">Event Name</string>
     <string name="advisor_add_fields">Fill in the Fields</string>
     <string name="advisor_add_advisor_name">Name of Advisor</string>
     <string name="advisor_add_event_name">Name of the event</string>
@@ -33,12 +34,13 @@
     <string name="choose_department">Choose Department</string>
 
     <!--Student Activity-->
-    <string name="student_activity_email">Enter your email</string>
-    <string name="student_activity_password">Enter your password</string>
-    <string name="student_activity_login">Login</string>
     <string name="EventName">TextView</string>
 
     <!--About Activity-->
     <string name="about">About</string>
+    <string name="about_part_one">We are a group of students from SFU commited to making the world a better place, one app at a time</string>
+    <string name="about_title">About the Developers</string>
+    <string name="sfu_resources_logo">SFU Resources logo</string>
+    <string name="version_1_0">Version: 1.0</string>
 
 </resources>
