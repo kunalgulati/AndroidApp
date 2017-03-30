@@ -29,7 +29,8 @@
         <activity
             android:name=".AdvisorAdd"
             android:label="Add Event"
-            android:parentActivityName=".AdvisorManagement" />
+            android:parentActivityName=".AdvisorManagement"
+            android:windowSoftInputMode="stateHidden"/>
         <activity
             android:name=".StudentDepartment"
             android:label="Department"
