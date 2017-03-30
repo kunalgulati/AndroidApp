@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.example.myles.sprint2.AdvisorAdd">
+        tools:context="com.SFU.G1.SFUResources.AdvisorAdd">
 
         <TextView
             style="@style/CategoryStyle"
