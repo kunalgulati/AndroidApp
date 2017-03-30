@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/display"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:label="SFU Resources">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,25 +18,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AdvisorLogin"
+        <activity
+            android:name=".AdvisorLogin"
             android:label="Advisor Login"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".AdvisorManagement"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdvisorManagement"
             android:label="Event Management"
-            android:parentActivityName=".AdvisorLogin"/>
-        <activity android:name=".AdvisorAdd"
+            android:parentActivityName=".AdvisorLogin" />
+        <activity
+            android:name=".AdvisorAdd"
             android:label="Add Event"
-            android:parentActivityName=".AdvisorManagement"/>
-        <activity android:name=".StudentDepartment"
+            android:parentActivityName=".AdvisorManagement" />
+        <activity
+            android:name=".StudentDepartment"
             android:label="Department"
-            android:parentActivityName=".StudentFaculty"/>
-        <activity android:name=".StudentFaculty"
+            android:parentActivityName=".StudentFaculty" />
+        <activity
+            android:name=".StudentFaculty"
             android:label="Faculty"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".StudentEvent"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".StudentEvent"
             android:label="Events" />
-        <activity android:name=".StudentEventDisplay"
-            ></activity>
+        <activity android:name=".StudentEventDisplay" />
+        <activity android:name=".AboutActivity"
+            android:label="About"/>
     </application>
 
 </manifest>

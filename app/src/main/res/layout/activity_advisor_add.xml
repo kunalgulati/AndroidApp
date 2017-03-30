@@ -25,7 +25,7 @@
             style="@style/CategoryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event Time"/>
+            android:text="@string/event_time"/>
 
         <EditText
             style="@style/EditTextStyle"
@@ -37,18 +37,19 @@
             style="@style/CategoryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event Date"/>
+            android:text="@string/event_date"/>
 
         <EditText
             style="@style/EditTextStyle"
             android:hint="@string/advisor_add_event_date"
-            android:id="@+id/eventDate"/>
+            android:id="@+id/eventDate"
+            android:inputType="datetime"/>
 
         <TextView
             style="@style/CategoryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event Location"/>
+            android:text="@string/event_location"/>
 
         <EditText
             style="@style/EditTextStyle"
@@ -59,7 +60,7 @@
             style="@style/CategoryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Organized By"/>
+            android:text="@string/organized_by"/>
 
         <EditText
             style="@style/EditTextStyle"
@@ -70,7 +71,7 @@
             style="@style/CategoryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Event Description"/>
+            android:text="@string/event_description"/>
 
         <EditText
             style="@style/EditTextStyle"
@@ -81,7 +82,7 @@
             style="@style/CategoryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose Faculty"/>
+            android:text="@string/choose_faculty"/>
 
         <RelativeLayout
             android:layout_margin="16dp"
@@ -102,7 +103,7 @@
             style="@style/CategoryStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose Department"/>
+            android:text="@string/choose_department"/>
 
         <RelativeLayout
             android:layout_margin="16dp"

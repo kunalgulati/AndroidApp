@@ -24,10 +24,21 @@
     <string name="advisor_add_organized_by">Organized By:</string>
     <string name="advisor_add_event_description">Event Description</string>
     <string name="advisor_add_submit">Submit</string>
+    <string name="event_time">Event Time</string>
+    <string name="event_date">Event Date</string>
+    <string name="event_location">Event Location</string>
+    <string name="organized_by">Organized By</string>
+    <string name="event_description">Event Description</string>
+    <string name="choose_faculty">Choose Faculty</string>
+    <string name="choose_department">Choose Department</string>
 
     <!--Student Activity-->
     <string name="student_activity_email">Enter your email</string>
     <string name="student_activity_password">Enter your password</string>
     <string name="student_activity_login">Login</string>
     <string name="EventName">TextView</string>
+
+    <!--About Activity-->
+    <string name="about">About</string>
+
 </resources>
