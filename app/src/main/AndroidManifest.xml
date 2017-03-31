@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/display"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
         <activity
             android:name="com.SFU.G1.SFUResources.MainActivity"
             android:label="SFU Resources">
@@ -45,6 +50,15 @@
         <activity android:name="com.SFU.G1.SFUResources.StudentEventDisplay" />
         <activity android:name="com.SFU.G1.SFUResources.AboutActivity"
             android:label="About"/>
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
