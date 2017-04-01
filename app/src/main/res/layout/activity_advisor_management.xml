@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/backgroundColor"
-    tools:context="com.SFU.G1.SFUResources.AdvisorManagement">
+    tools:context="com.CMPT.G1.StudentResources.AdvisorManagement">
 
     <Button
         style="@style/ButtonStyle"

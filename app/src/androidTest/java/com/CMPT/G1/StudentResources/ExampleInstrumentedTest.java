@@ -1,4 +1,4 @@
-package com.SFU.G1.SFUResources;
+package com.CMPT.G1.StudentResources;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

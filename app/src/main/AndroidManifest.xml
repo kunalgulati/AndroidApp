@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.SFU.G1.SFUResources">
+    package="com.CMPT.G1.StudentResources">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.SFU.G1.SFUResources.MainActivity"
+            android:name="com.CMPT.G1.StudentResources.MainActivity"
             android:label="SFU Resources">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,31 +19,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.SFU.G1.SFUResources.AdvisorLogin"
+            android:name="com.CMPT.G1.StudentResources.AdvisorLogin"
             android:label="Advisor Login"
-            android:parentActivityName="com.SFU.G1.SFUResources.MainActivity" />
+            android:parentActivityName="com.CMPT.G1.StudentResources.MainActivity" />
         <activity
-            android:name="com.SFU.G1.SFUResources.AdvisorManagement"
+            android:name="com.CMPT.G1.StudentResources.AdvisorManagement"
             android:label="Event Management"
-            android:parentActivityName="com.SFU.G1.SFUResources.AdvisorLogin" />
+            android:parentActivityName="com.CMPT.G1.StudentResources.AdvisorLogin" />
         <activity
-            android:name="com.SFU.G1.SFUResources.AdvisorAdd"
+            android:name="com.CMPT.G1.StudentResources.AdvisorAdd"
             android:label="Add Event"
-            android:parentActivityName="com.SFU.G1.SFUResources.AdvisorManagement"
+            android:parentActivityName="com.CMPT.G1.StudentResources.AdvisorManagement"
             android:windowSoftInputMode="stateHidden"/>
         <activity
-            android:name="com.SFU.G1.SFUResources.StudentDepartment"
+            android:name="com.CMPT.G1.StudentResources.StudentDepartment"
             android:label="Department"
-            android:parentActivityName="com.SFU.G1.SFUResources.StudentFaculty" />
+            android:parentActivityName="com.CMPT.G1.StudentResources.StudentFaculty" />
         <activity
-            android:name="com.SFU.G1.SFUResources.StudentFaculty"
+            android:name="com.CMPT.G1.StudentResources.StudentFaculty"
             android:label="Faculty"
-            android:parentActivityName="com.SFU.G1.SFUResources.MainActivity" />
+            android:parentActivityName="com.CMPT.G1.StudentResources.MainActivity" />
         <activity
-            android:name="com.SFU.G1.SFUResources.StudentEvent"
+            android:name="com.CMPT.G1.StudentResources.StudentEvent"
             android:label="Events" />
-        <activity android:name="com.SFU.G1.SFUResources.StudentEventDisplay" />
-        <activity android:name="com.SFU.G1.SFUResources.AboutActivity"
+        <activity android:name="com.CMPT.G1.StudentResources.StudentEventDisplay" />
+        <activity android:name="com.CMPT.G1.StudentResources.AboutActivity"
             android:label="About"/>
     </application>
 

@@ -1,4 +1,4 @@
-package com.SFU.G1.SFUResources;
+package com.CMPT.G1.StudentResources;
 
 import android.content.Intent;
 import android.support.v4.content.ContextCompat;
@@ -108,7 +108,7 @@ public class StudentFaculty extends AppCompatActivity {
             // Used for aligning the text
             button.setGravity(Gravity.CENTER);
             // Changing the color of button
-            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuRed));
+            button.setBackgroundColor(ContextCompat.getColor(this, R.color.sfuBlue));
             // Changing the color of the text
             button.setTextColor(ContextCompat.getColor(this, R.color.white));
         }

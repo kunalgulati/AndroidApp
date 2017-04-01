@@ -1,4 +1,4 @@
-package com.SFU.G1.SFUResources;
+package com.CMPT.G1.StudentResources;
 
 import org.junit.Test;
 
