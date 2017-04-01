@@ -18,12 +18,12 @@
         style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/about_part_one" />
+        android:text="@string/about_part_one"
+        android:textColor="@color/white"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@mipmap/display"
         android:contentDescription="@string/sfu_resources_logo"/>
 
     <RelativeLayout
@@ -36,7 +36,8 @@
             style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/version_1_0" />
+            android:text="@string/version_1_0"
+            android:textColor="@color/white"/>
     </RelativeLayout>
 
 </LinearLayout>

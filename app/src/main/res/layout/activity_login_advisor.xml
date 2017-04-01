@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroundColor"
+    android:background="@color/sfuRedDark"
     android:orientation="vertical"
     tools:context="com.CMPT.G1.StudentResources.AdvisorLogin">
 
@@ -16,33 +16,34 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/sfuRed"
             android:orientation="vertical">
 
 
             <EditText
-                android:layout_marginTop="24dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginStart="16dp"
-                android:paddingTop="16dp"
                 android:id="@+id/advisor_email"
                 style="@style/EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/activity_advisor_email"
-                android:inputType="textEmailAddress"
-                android:background="@drawable/login_style" />
-
-            <EditText
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
-                android:paddingTop="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/login_style"
+                android:hint="@string/activity_advisor_email"
+                android:inputType="textEmailAddress"
+                android:paddingTop="16dp" />
+
+            <EditText
                 android:id="@+id/advisor_password"
                 style="@style/EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/login_style"
                 android:hint="@string/activity_advisor_password"
                 android:inputType="textPassword"
-                android:background="@drawable/login_style"/>
+                android:paddingTop="16dp" />
 
             <Button
                 android:id="@+id/advisor_login_btn"

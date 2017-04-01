@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="backgroundColor">#E0E0E0</color>
+    <color name="backgroundColor">#811324</color>
     <color name="sfuRed">#A6192E</color>
     <color name="sfuRedDark">#811324</color>
     <color name="sfuBlue">#007096</color>
