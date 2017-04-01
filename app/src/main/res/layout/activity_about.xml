@@ -18,16 +18,14 @@
         style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/about_part_one"
-        android:textColor="@color/white"/>
+        android:text="@string/about_part_one" />
 
     <TextView
         android:paddingTop="16dp"
         style="@style/EditTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/about_part_two"
-        android:textColor="@color/white"/>
+        android:text="@string/about_part_two" />
 
 
     <ImageView
@@ -46,8 +44,7 @@
             style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/version_1_0"
-            android:textColor="@color/white"/>
+            android:text="@string/version_1_0" />
     </RelativeLayout>
 
 </LinearLayout>

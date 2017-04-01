@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.CMPT.G1.StudentResources.MainActivity"
-    android:background="@color/sfuRedDark">
+    android:background="@color/backgroundColor">
 
     <ImageView
         android:paddingTop="16dp"
