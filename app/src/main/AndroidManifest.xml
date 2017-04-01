@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity
             android:name="com.CMPT.G1.StudentResources.MainActivity"
-            android:label="SFU Resources">
+            android:label="Student Resources">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

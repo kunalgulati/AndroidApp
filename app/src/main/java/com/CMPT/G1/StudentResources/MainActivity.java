@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 myRef = database.getReference(facultyName);
                 String childName = DepartmentList.DepartmentInfo.Department[i][j];
                 myRef = myRef.child(childName);
-                myRef.setValue(i);
+                myRef.setValue(0);
             }
         }
 

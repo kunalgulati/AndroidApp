@@ -1,6 +1,6 @@
 <resources>
     <!--Main Activity-->
-    <string name="app_name">SFU Resources</string>
+    <string name="app_name">Student Resources</string>
     <string name="activity_main_student">Student</string>
     <string name="activity_main_advisor">Advisor</string>
 
@@ -38,7 +38,10 @@
 
     <!--About Activity-->
     <string name="about">About</string>
-    <string name="about_part_one">We are a group of students from SFU commited to making the world a better place, one app at a time</string>
+    <string name="about_part_one">We are a group of students from SFU committed to making the world a better place, one app at a time
+            </string>
+    <string name="about_part_two">This app allows students to browse by Faculty and Department to find events relevant to their interests.
+            It also allows advisors to add important events to the app, ensuring students are informed and aware of upcoming events</string>
     <string name="about_title">About the Developers</string>
     <string name="sfu_resources_logo">SFU Resources logo</string>
     <string name="version_1_0">Version: 1.1</string>

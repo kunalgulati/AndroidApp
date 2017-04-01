@@ -243,6 +243,8 @@ public class AdvisorAdd extends AppCompatActivity {
 
                 addEvent(eventDetails);
 
+                Toast.makeText(AdvisorAdd.this, "Event Added!", Toast.LENGTH_SHORT).show();
+
                 finish();
             }
         });
