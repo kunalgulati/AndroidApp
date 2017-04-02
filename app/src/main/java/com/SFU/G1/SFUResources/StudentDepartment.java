@@ -1,25 +1,24 @@
 package com.SFU.G1.SFUResources;
 
 import android.content.Intent;
-import android.support.v4.content.ContextCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.TableLayout;
-import android.widget.TableRow;
+import android.widget.GridView;
 
 
 public class StudentDepartment extends AppCompatActivity
 {
     int faculty_index;
 
-    private int Total_Rows;           // Total number of faculties in SFU
+    private int Total_Rows;           // Total number of faculties in sfu
     // To be fetched from the Database
+
+    String Department ="department";
+    GridView grid;
 
     private static Button BtnArray[] = new Button[30];          // An Array of buttons
 
@@ -31,33 +30,40 @@ public class StudentDepartment extends AppCompatActivity
         Bundle bundle = getIntent().getExtras();    // Getting the data from Student Faculty
         faculty_index = bundle.getInt("Send");               // Getting the  data
         Log.d("DepPage","Fac_Ind:  "+faculty_index);
+
         Total_Rows = DepartmentList.DepartmentInfo.Department[faculty_index].length;
 
-        populateDepartment();
 
-    }
+        CustomGrid adapter = new CustomGrid(StudentDepartment.this, Department, Total_Rows, faculty_index);
+        grid=(GridView)findViewById(R.id.GridDepartment);
+        grid.setAdapter(adapter);
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id){
-            case(R.id.about):
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
+        grid.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id)
+            {
+                // Sending the Data to StudentDepartment
+                // The position will be used to identify, which faculty was selected
+                Intent intent = new Intent(getApplicationContext(), StudentEvent.class);
+                intent.putExtra("faculty_index", faculty_index);
+                Log.d("DepPage","Fac_Ind:  "+faculty_index);
+                intent.putExtra("department_index", position);
+
+
+
                 startActivity(intent);
-            default:
-                break;
-        }
-        return super.onOptionsItemSelected(item);
+            }
+        });
+
+
+        //populateDepartment();
+
     }
 
 
-    private void populateDepartment() {
+/*    private void populateDepartment() {
 
         TableLayout table = (TableLayout) findViewById(R.id.StudentDepartment);
 
@@ -133,6 +139,6 @@ public class StudentDepartment extends AppCompatActivity
         Log.d("DepPage","Fac_Ind:  "+faculty_index);
         intent.putExtra("department_index", department_index);
         startActivity(intent);
-    }
+    }*/
 
 }

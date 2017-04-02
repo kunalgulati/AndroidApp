@@ -42,5 +42,8 @@
     <string name="about_title">About the Developers</string>
     <string name="sfu_resources_logo">SFU Resources logo</string>
     <string name="version_1_0">Version: 1.0</string>
+    <string name="kunal" />
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
 
 </resources>

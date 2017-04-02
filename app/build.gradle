@@ -5,7 +5,6 @@ android {
         firstConfig {
             keyAlias 'SFUResourcesKey'
             keyPassword 'SFU123'
-            storeFile file('C:/Users/Myles/SFUResources_APK/SFUResources.jks')
             storePassword 'Awsomeawsome12'
         }
     }
@@ -40,6 +39,10 @@ dependencies {
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
 }
+
+
+
+
 
 
 

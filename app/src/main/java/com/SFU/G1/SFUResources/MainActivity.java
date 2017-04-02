@@ -1,15 +1,12 @@
 package com.SFU.G1.SFUResources;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         // Only run to setup database categories. Do not run if database is already running
-        setupDatabase();
+        //setupDatabase();
 
         studentBtn = (Button) findViewById(R.id.student_btn);
         advisorBtn = (Button) findViewById(R.id.advisor_btn);
@@ -69,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
      * This will ONLY work if you are connected to the internet on your AVD/Android device
      * Populates the FireBase database with the Faculty and Departments
      */
-    private void setupDatabase() {
+    /*private void setupDatabase() {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef;
 
@@ -94,6 +91,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-    }
+    }*/
 
 }

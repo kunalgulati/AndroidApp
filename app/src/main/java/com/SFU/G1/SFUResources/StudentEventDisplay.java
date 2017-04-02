@@ -1,22 +1,30 @@
 package com.SFU.G1.SFUResources;
 
-import android.content.Context;
-import android.content.Intent;
-import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
-public class StudentEventDisplay extends AppCompatActivity {
+public class StudentEventDisplay extends AppCompatActivity{
 
     String AdvisorName, EventName, EventDate, EventTime, EventLocation, EventOrganizers, EventDescription;
-    Context ctx = this;
+    LinearLayout Layout;
+    private String FacultyName;
+    private String DepartmentName;
+    private int faculty_index;
+    private int department_index;
 
+    private String Name;
+    public String Location;
+    public String Time;
+    public String Organizers;
+    public String Date;
+    public String Description;
+
+    TextView Text;
 
 
     @Override
@@ -24,65 +32,43 @@ public class StudentEventDisplay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_event_display);
 
-        LinearLayout Layout = (LinearLayout) findViewById(R.id.DisplayLinearLayout);
-        TextView Text = new TextView(this);
 
 
-        //params.leftMargin = 50;
-        //params.topMargin  = i*50;
-
-        AdvisorName = "kunal";
-
-        AdvisorDatabaseOperations DOP = new AdvisorDatabaseOperations(ctx);
-        Cursor CR = DOP.getInformation(DOP);
-        CR.moveToFirst();
-        do {
-            if (AdvisorName.equals(CR.getString(0)))
-            {
-                EventName = CR.getString(1);
-                EventDescription =CR.getString(6);
-                /*EventDate = CR.getString(2);
-                EventTime =  CR.getString(3);
-                EventLocation = CR.getString(4);
-                EventOrganizers = CR.getString(5);
-                EventDescription = CR.getString(6);*/
-            }
-        } while (CR.moveToNext());
+        // Getting extra data about the options selcted from the previous activity
+        Bundle bundle = getIntent().getExtras();
+        faculty_index = bundle.getInt("faculty_index");
+        department_index = bundle.getInt("department_index");
+        Name = bundle.getString("event_name");
+        Date = bundle.getString("date");
+        Description = bundle.getString("description");
+        Location = bundle.getString("location");
+        Time = bundle.getString("time");
+        Organizers = bundle.getString("organizers");
 
 
-        /*Text.setText("Name of Event: " + EventName + "\n"
-                + "Time: " + EventTime + "\n"
-                + "Date: " + EventDate + "\n"
-                + "Location: " + EventLocation + "\n"
-                + "Organizers: " + EventOrganizers + "\n"
-                + "Description: " + EventDescription +"\n"
-        );  */
 
 
+        Toast.makeText(this, "Testing " + faculty_index + " " + department_index + " " + Name, Toast.LENGTH_LONG).show();
+
+        FacultyName = DepartmentList.DepartmentInfo.Faculty[faculty_index];
+        DepartmentName = DepartmentList.DepartmentInfo.Department[faculty_index][department_index];
+
+        Layout= (LinearLayout) findViewById(R.id.DisplayLinearLayout);
+        Text = new TextView(this);
+
+
+
+        Text.setText("Name: " + Name + "\n \n" + " Date: " + Date + "\n \n" +
+                "  Description: " + Description +"\n \n" + "  Location: " + Location + "\n \n"+
+                "  Organizers: " + Organizers + "\n \n" + " Time: " + Time);
 
         Text.setGravity(Gravity.LEFT);      // Used for aligning the text
         Layout.addView(Text);
-    }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return true;
-    }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id){
-            case(R.id.about):
-                Intent intent = new Intent(getApplicationContext(), AboutActivity.class);
-                startActivity(intent);
-            default:
-                break;
-        }
-        return super.onOptionsItemSelected(item);
+
     }
 
 }
 /////////
-// HELp: http://stackoverflow.com/questions/4394293/create-a-new-textview-programmatically-then-display-it-below-another-textview
+// HELp: http://stackoverflow.com/questions/4394293/create-a-new-textview-programmatically-then-display-it-below-another-textviewthen-display-it-below-another-textview

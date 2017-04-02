@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "327856358151-3s6ei5qasa9ufs5qmgkenkta7pvtgh4f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myles.sprint2",
+            "certificate_hash": "82e41d0c6bc0a2ca324a05e427bc8a1c7a23c267"
+          }
+        },
+        {
           "client_id": "327856358151-mh02e0j59v38p3c9ofont6r8cl2m23u7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
