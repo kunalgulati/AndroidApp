@@ -26,7 +26,7 @@ public class StudentEvent extends AppCompatActivity {
 
     // To be fetched from the Database
     private int Total_Rows = 0; // Temp value
-private int faculty_index;
+    private int faculty_index;
     private int department_index;
 
     @Override

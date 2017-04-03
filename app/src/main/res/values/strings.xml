@@ -6,7 +6,7 @@
 
     <!--Advisor Login Activity-->
     <string name="activity_advisor_login">Login</string>
-    <string name="activity_advisor_email">Please enter your email</string>
+    <string name="activity_advisor_username">Please enter your username</string>
     <string name="activity_advisor_password">Please enter your password</string>
 
     <!--Advisor Event Activity-->
@@ -33,6 +33,9 @@
     <string name="choose_faculty">Choose Faculty</string>
     <string name="choose_department">Choose Department</string>
 
+    <!--Advisor Edit Event Activity-->
+    <string name="advisor_edit_label">Edit Events</string>
+
     <!--Student Activity-->
     <string name="EventName">TextView</string>
 
@@ -42,5 +45,6 @@
     <string name="about_title">About the Developers</string>
     <string name="sfu_resources_logo">SFU Resources logo</string>
     <string name="version_1_0">Version: 1.0</string>
+    <string name="title_activity_advisor_edit">Edit Event</string>
 
 </resources>
