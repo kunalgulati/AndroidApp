@@ -5,17 +5,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.SFU.G1.SFUResources.MainActivity">
-    
+    tools:context="com.CMPT.G1.StudentResources.MainActivity"
+    android:background="@color/backgroundColor">
+
+    <ImageView
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_people_outline_black_48dp"/>
+
     <Button
-        style="@style/ButtonStyle"
+        style="@style/MainActivityButtonStyle"
         android:id="@+id/student_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/activity_main_student" />
 
+    <ImageView
+        android:paddingTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_person_outline_black_48dp"/>
+
     <Button
-        style="@style/ButtonStyle"
+        style="@style/MainActivityButtonStyle"
         android:id="@+id/advisor_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

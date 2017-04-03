@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:327856358151:android:e55bf51bc195aa84",
         "android_client_info": {
-          "package_name": "com.SFU.G1.SFUResources"
+          "package_name": "com.CMPT.G1.StudentResources"
         }
       },
       "oauth_client": [
@@ -26,7 +26,7 @@
           "client_id": "327856358151-mh02e0j59v38p3c9ofont6r8cl2m23u7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.myles.sprint2",
+            "package_name": "com.CMPT.G1.StudentResources",
             "certificate_hash": "1b8e5d6e243eaa204213f7fb8fbd9c3ab42dc62d"
           }
         },

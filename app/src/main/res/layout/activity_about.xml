@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.SFU.G1.SFUResources.AboutActivity">
+    tools:context="com.CMPT.G1.StudentResources.AboutActivity">
 
     <TextView
         style="@style/CategoryStyle"
@@ -19,6 +19,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/about_part_one" />
+
+    <TextView
+        android:paddingTop="16dp"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/about_part_two" />
+
 
     <ImageView
         android:layout_width="match_parent"
