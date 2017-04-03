@@ -3,6 +3,7 @@ package com.CMPT.G1.StudentResources;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Gravity;
@@ -110,22 +111,20 @@ public class StudentEvent extends AppCompatActivity implements View.OnClickListe
 
                 int row = 0;
 
-                String temp = null;
-                String caste = null;
                 String Date = null, Description = null, Location = null, Organizers = null, Time = null, EventName = null;
 
                 for (DataSnapshot child : dataSnapshot.getChildren()) {
 
                     Post user = child.getValue(Post.class);
+                    user.setEventName(child.getKey());
 
                     // Getting the name of the user
-                    EventName = child.getKey().toString();
-
-                    Date = user.date;
-                    Location = user.location;
-                    Organizers = user.organizers;
-                    Time = user.time;
-                    Description = user.description;
+                    EventName = user.getEventName();
+                    Date = user.getDate();
+                    Location = user.getLocation();
+                    Organizers = user.getOrganizers();
+                    Time = user.getTime();
+                    Description = user.getDescription();
 
 
                     // Processing the Button
@@ -133,11 +132,12 @@ public class StudentEvent extends AppCompatActivity implements View.OnClickListe
                     // Displays the text at the Center
                     // Name of faculties are supposed to fetched from the database
 
-                    button.setText("Name: " + EventName + "\n \n" + " Date: " + Date + "\n \n" +
+                    button.setText("  Name: " + EventName + "\n \n" + "  Date: " + Date + "\n \n" +
                             "  Description: " + Description +"\n \n" + "  Location: " + Location + "\n \n"+
-                            "  Organizers: " + Organizers + "\n \n" + " Time: " + Time);
+                            "  Organizers: " + Organizers + "\n \n" + "  Time: " + Time);
                     button.setGravity(Gravity.LEFT);      // Used for aligning the text
-                    button.setBackgroundColor(Color.rgb(211,211,211)    );  // Changing the color of button
+                    button.setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.sfuRed));  // Changing the color of button
+                    button.setTextColor(ContextCompat.getColor(getApplicationContext(), R.color.white));
 
                     //Saving the Event Name in the Array
                     SaveName[row] = EventName;

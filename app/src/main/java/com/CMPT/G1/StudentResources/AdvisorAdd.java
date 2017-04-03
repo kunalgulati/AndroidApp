@@ -23,11 +23,17 @@ public class AdvisorAdd extends AppCompatActivity {
     Button submitBtn;
     Spinner spinner;
     Spinner spinnerFaculty;
+    Bundle extras;
+    String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_advisor_add);
+
+        // Gets username from login page
+        extras = getIntent().getExtras();
+        username = extras.getString("username");
 
         submitBtn = (Button) findViewById(R.id.submit_btn);
         spinner = (Spinner) findViewById(R.id.spinner);
@@ -78,6 +84,7 @@ public class AdvisorAdd extends AppCompatActivity {
         myRef.child("location").setValue(event.get(3));
         myRef.child("organizers").setValue(event.get(4));
         myRef.child("description").setValue(event.get(5));
+        myRef.child("advisorName").setValue(event.get(6));
     }
 
     private void populateFacultySpinner() {
@@ -238,6 +245,7 @@ public class AdvisorAdd extends AppCompatActivity {
                 eventDetails.add(DatabaseLocation);
                 eventDetails.add(DatabaseOrganizers);
                 eventDetails.add(DatabaseDescription);
+                eventDetails.add(username);
                 eventDetails.add(department);
                 eventDetails.add(faculty);
 

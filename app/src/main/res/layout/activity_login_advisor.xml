@@ -21,7 +21,7 @@
 
 
             <EditText
-                android:id="@+id/advisor_email"
+                android:id="@+id/advisor_username"
                 style="@style/EditTextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/login_style"
-                android:hint="@string/activity_advisor_email"
+                android:hint="@string/activity_advisor_username"
                 android:inputType="textEmailAddress"
                 android:paddingTop="16dp" />
 

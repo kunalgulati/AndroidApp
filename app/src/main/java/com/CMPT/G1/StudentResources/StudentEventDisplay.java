@@ -52,9 +52,9 @@ public class StudentEventDisplay extends AppCompatActivity{
 
 
 
-        Text.setText("Name: " + Name + "\n \n" + " Date: " + Date + "\n \n" +
+        Text.setText("  Name: " + Name + "\n \n" + "  Date: " + Date + "\n \n" +
                 "  Description: " + Description +"\n \n" + "  Location: " + Location + "\n \n"+
-                "  Organizers: " + Organizers + "\n \n" + " Time: " + Time);
+                "  Organizers: " + Organizers + "\n \n" + "  Time: " + Time);
 
         Text.setGravity(Gravity.LEFT);      // Used for aligning the text
         Layout.addView(Text);

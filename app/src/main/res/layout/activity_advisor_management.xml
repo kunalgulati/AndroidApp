@@ -16,12 +16,12 @@
         android:text="@string/advisor_event_add_event"/>
 
     <!--TODO: Sprint 3-->
-    <!--<Button
+    <Button
         style="@style/ButtonStyle"
         android:id="@+id/edit_event_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/advisor_event_edit_event"/>-->
+        android:text="@string/advisor_event_edit_event"/>
 
     <!--TODO: Sprint 3-->
     <!--<Button

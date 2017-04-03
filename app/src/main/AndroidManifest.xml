@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.CMPT.G1.StudentResources">
-
     package="com.CMPT.G1.StudentResources">
     <application
         android:allowBackup="true"
@@ -11,51 +10,51 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.CMPT.G1.StudentResources.MainActivity"
+            android:name=".MainActivity"
             android:label="Student Resources">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.CMPT.G1.StudentResources.AdvisorLogin"
+            android:name=".AdvisorLogin"
             android:label="Advisor Login"
-            android:parentActivityName="com.CMPT.G1.StudentResources.MainActivity" />
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.CMPT.G1.StudentResources.AdvisorManagement"
+            android:name=".AdvisorManagement"
             android:label="Event Management"
-            android:parentActivityName="com.CMPT.G1.StudentResources.AdvisorLogin" />
-
+            android:parentActivityName=".AdvisorLogin" />
         <activity
-            android:name="com.CMPT.G1.StudentResources.AdvisorAdd"
+            android:name=".AdvisorAdd"
             android:label="Add Event"
-            android:parentActivityName="com.CMPT.G1.StudentResources.AdvisorManagement"
-            android:windowSoftInputMode="stateHidden"/>
-
-
+            android:parentActivityName=".AdvisorManagement"
+            android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name="com.CMPT.G1.StudentResources.StudentDepartment"
+            android:name=".StudentDepartment"
             android:label="Department"
-            android:parentActivityName="com.CMPT.G1.StudentResources.StudentFaculty" />
-
+            android:parentActivityName=".StudentFaculty" />
         <activity
-            android:name="com.CMPT.G1.StudentResources.StudentFaculty"
+            android:name=".StudentFaculty"
             android:label="Faculty"
-            android:parentActivityName="com.CMPT.G1.StudentResources.MainActivity" />
-
-
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:name="com.CMPT.G1.StudentResources.StudentEvent"
+            android:name=".StudentEvent"
             android:label="Events" />
-
-        <activity android:name="com.CMPT.G1.StudentResources.StudentEventDisplay" />
-        <activity android:name="com.CMPT.G1.StudentResources.AboutActivity"
-            android:label="About"/>
-
-        <activity android:name="com.CMPT.G1.StudentResources.CustomGrid" />
+        <activity android:name=".StudentEventDisplay" />
+        <activity
+            android:name=".AboutActivity"
+            android:label="About" />
+        <activity android:name=".CustomGrid" />
         <activity android:name=".Testing" />
-
+        <activity
+            android:name=".AdvisorEditEvent"
+            android:label="@string/advisor_edit_label"
+            android:parentActivityName=".AdvisorManagement" />
+        <activity android:name=".EventChange"
+                  android:label="@string/advisor_edit_label"
+                  android:parentActivityName=".AdvisorEditEvent"/>
     </application>
 
 </manifest>

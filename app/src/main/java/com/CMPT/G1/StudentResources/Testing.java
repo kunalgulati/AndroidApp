@@ -75,26 +75,24 @@ public class Testing extends AppCompatActivity implements View.OnClickListener{
                    post = singleSnapshot.getValue(Post.class);
                    Toast.makeText(Testing.this, "hellooooo", Toast.LENGTH_LONG).show();
                }*/
-              String temp = null;
-               String caste = null;
+
                String Date = null, Description = null, Location = null, Organizers = null, Time = null, EventName = null;
 
                for (DataSnapshot child : dataSnapshot.getChildren()) {
 
-                   Post user = child.getValue(Post.class);
-
-                   // Getting the name of the user
-                   EventName = child.getKey().toString();
+                   Post event = child.getValue(Post.class);
 
 
                    // Reading the Data,
                    // Important: The data is read from the names, not the constructor
                    // Important: Make sure the spellings are correct
-                   Date = user.date;
-                   Location = user.location;
-                   Organizers = user.organizers;
-                   Time = user.time;
-                    Description = user.description;
+                   Date = event.getDate();
+                   Location = event.getLocation();
+                   Organizers = event.getOrganizers();
+                   Time = event.getTime();
+                   Description = event.getDescription();
+                   EventName = event.getEventName();
+                   
 
 
                    /*temp = kunal.toString();
