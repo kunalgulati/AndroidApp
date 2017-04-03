@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 
 public class StudentEventDisplay extends AppCompatActivity{
@@ -44,11 +43,6 @@ public class StudentEventDisplay extends AppCompatActivity{
         Location = bundle.getString("location");
         Time = bundle.getString("time");
         Organizers = bundle.getString("organizers");
-
-
-
-
-        Toast.makeText(this, "Testing " + faculty_index + " " + department_index + " " + Name, Toast.LENGTH_LONG).show();
 
         FacultyName = DepartmentList.DepartmentInfo.Faculty[faculty_index];
         DepartmentName = DepartmentList.DepartmentInfo.Department[faculty_index][department_index];
