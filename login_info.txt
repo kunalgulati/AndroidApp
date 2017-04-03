@@ -1,0 +1,5 @@
+Fake user accounts for Advisor Login
+username: colin
+password: 12345
+faculty: Faculty of Applied Science
+department: School of Computing Science
